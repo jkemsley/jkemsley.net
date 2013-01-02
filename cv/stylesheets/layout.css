@@ -34,66 +34,154 @@ body {
 	margin-bottom: 100px;
 }
 
-#header {
-	padding-top: 40px;
-}
+	#header {
+		padding-top: 40px;
+	}
 
-#main_title h1{
-	font-family: 'PT Sans Narrow', sans-serif;
-}
+		#main_title h1{
+			font-family: 'PT Sans Narrow', sans-serif;
+		}
 
-#main_title h1 small {
-	font-size: 24px;
-	line-height: 25px;
-	color: #6f6f6f;
-	display: block;
-}
+			#main_title h1 small {
+				font-size: 24px;
+				line-height: 25px;
+				color: #6f6f6f;
+				display: block;
+			}
 
-#main_title h1 span {
-	font-size: 80px;
-	font-weight: bold;
-	line-height: 60px;
-	text-transform: uppercase;
-	color: #000;
-	display: block;
-}
+			#main_title h1 span {
+				font-size: 80px;
+				font-weight: bold;
+				line-height: 60px;
+				text-transform: uppercase;
+				color: #000;
+				display: block;
+			}
 
-#links {
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-size: 18px;
-	text-align: right;
-	padding-top: 55px;
-}
+		#links {
+			font-family: 'PT Sans Narrow', sans-serif;
+			font-size: 18px;
+			text-align: right;
+			padding-top: 55px;
+		}
 
-#links li em{
-	font-weight: bold;
-	display: block;
-	color: #000;
-}
+			#links li em{
+				font-weight: bold;
+				display: block;
+				color: #000;
+			}
 
-.section {
-	border-top: 1px solid #e0e0e0;
-}
+	.section {
+		border-top: 1px solid #e0e0e0;
+	}
 
-.section_head {
-	text-align: right;
-}
+		.section_head {
+			text-align: right;
+		}
 
-.section_head span {
-	padding-right: 15px;
-	font-size: 24px;
-	line-height: 33px;
-	text-transform: uppercase;
-	font-weight: bold;
-}
+			.section_head span {
+				padding-right: 15px;
+				font-size: 24px;
+				line-height: 33px;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
 
-#about .section_head span {
-	color: #00a8ff;
-}
+		#about .section_head span {
+			color: #072957;
+		}
 
-#skills ul li {
-	border-right: 4px solid #dedede;
-}
+		#skills .section_head span {
+			color: #45715D;
+		}
+
+		#experience .section_head span {
+			color: #7D8652;
+		}
+
+		#education .section_head span {
+			color: #B55F4B;
+		}
+
+		#references .section_head span {
+			color: #AE2733;
+		}
+
+		#skills ul li {
+			padding: 15px 10px 15px 20px;
+			/*background: #072957;*/
+			color: #6f6f6f;
+			border-left: 8px solid #45715D;
+		}
+
+		/*#skills ul li.second {
+			border-color: #45715D;
+		}
+
+		#skills ul li.third {
+			border-color: #7D8652;
+		}
+
+		#skills ul li.fourth {
+			border-color: #B55F4B;
+		}
+
+		#skills ul li.fifth {
+			border-color: #AE2733;
+		}*/
+
+			#skills ul li strong {
+				color: #6f6f6f;
+			}
+
+	#experience .blk {
+		border-left: 8px solid #7D8652;
+		padding-left: 20px;
+		margin-bottom: 15px;
+	}
+
+		#experience .blk h3 {
+			font-family: 'PT Sans Narrow', sans-serif;
+			font-weight: bold;
+			font-size: 24px;
+			margin-bottom: 3px;
+			color: #7D8652;
+		}
+
+		#experience .blk .job {
+			border-bottom: 2px dashed;
+			border-color: #dedede;
+			margin-top: 0px;
+			margin-bottom: 10px;
+		}
+
+			#experience .blk .job h4 {
+				font-family: 'PT Sans Narrow', sans-serif;
+				font-weight: bold;
+				font-size: 18px;
+				margin-top: 0px;
+			}
+
+	#education .blk {
+		border-left: 8px solid #B55F4B;
+		padding-left: 20px;
+		margin-bottom: 15px;
+	}
+
+		#education .blk h3 { 
+			font-family: 'PT Sans Narrow', sans-serif;
+			font-weight: bold;
+			font-size: 24px;
+			margin-bottom: 0px;
+			color: #B55F4B;
+		}
+
+			#education .blk h3 span {
+				font-size: 16px;
+				font-weight: normal;
+				color: #6f6f6f;
+			}
+
 
 /* #Utility classes
 ================================================== */
