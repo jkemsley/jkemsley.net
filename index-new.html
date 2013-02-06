@@ -9,21 +9,32 @@
 
     <title></title>
 
-    <meta name="description" content="">
+    <meta name="description" content="I'm Jody Kemsley a website and application developer/designer.">
+    <meta name="author" content="Jody Kemsley">
+
     <meta name="viewport" content="width=device-width">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100' rel='stylesheet' type='text/css'>
+
+    <link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+        <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+    
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/vendor/modernizr.min.js"></script>
   </head>
-  <body>
+  <body id="jkemsley-net" class="one-page-site">
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
+    <!-- / navigation -->
     <nav role="navigation">
       <ul class="nav nav-fixed">
         <li class="home"><a href="#home">Home</a></li>
@@ -32,17 +43,84 @@
         <li class="contact"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <!-- ______________________________________________________________________ -->
 
-    
+    <div class="site">
+
+      <!-- / home-page -->
+      <article class="page" id="home">
+          <div class="page-content home-content">
+            <header class="page-header home-header">
+              <h1>Jody <span>Kemsley</span></h1>
+              <div class="tag">
+                web designer
+                developer
+              </div>
+            </header>
+            <ul class="pages">
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+      </article>
+      <!-- ______________________________________________________________________ -->
+
+      <!-- / about-page -->
+      <article class="page" id="about">
+        <div class="page-content about-content">
+          <div class="blurb">
+            <h1>About <span>me</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet molestie est, luctus sodales justo tincidunt id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas pulvinar vulputate placerat. Morbi lacinia dictum mi ut feugiat. Donec aliquet lacus eget ipsum pharetra nec mollis justo pretium. Etiam quis velit id odio vulputate rutrum. Nulla at justo felis, in pellentesque erat.</p>
+          </div>
+
+          <ul class="skills">
+            <li class="skill pm">
+              <img src="img/pm.png" alt="project management" />
+              <p>Knowledge of project management methodologies such as Agile and ITIL. Experience of managing a team to deliver projects. Industry experience and training in Scrum.</p>
+            </li>
+            <li class="skill des">
+              <img src="img/des.png" alt="design" />
+              <p>Proficiant in Photoshop, Illustrator, HTML5, &amp; CSS3. Working knowledge of libraries/resources including LESS, SASS &amp; HTML Boilerplate. A passion for clean usable design.</p>
+            </li>
+            <li class="skill dev">
+              <img src="img/dev.png" alt="development" />
+              <p>Experience developing with PHP, Ruby, Java, MySQL and Javascript. Working knowledge of frameworks such as Rails, Spring, Backbone, JQuery &amp; Wordpress.</p>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <!-- ______________________________________________________________________ -->
+
+      <!-- / portfolio-page -->
+      <article class="page" id="portfolio">
+        <div class="page-content portfolio-content">
+          <div class="compiling"></div>
+
+          <div class="shelf-left"></div>
+          <div class="shelf-middle"></div>
+          <div class="shelf-right"></div>
+        </div>
+      </article>
+      <!-- ______________________________________________________________________ -->
+
+      <!-- / contact-page -->
+      <article class="page" id-"contact">
+        <div class="page-content contact-content">
+          <h1>Contact</h1>
+        </div>
+      </article>
+      <!-- ______________________________________________________________________ -->
+    </div>
 
     <!-- JavaScript at the bottom for fast page loading -->
 
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+            <!-- // <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script> -->
     <!-- scripts concatenated and minified via build script -->
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script> -->
     <!-- end scripts -->
 
      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
