@@ -8,3 +8,38 @@
 
 // Variables and mixins
 @import "variables";
+@import "mixins";
+
+// Site wide styles (html, body)
+@import "site";
+
+// 2. TYPOGRAPHY 			==============================
+
+// Block level (h1, p) and text-level (em, strong) type
+@import "typography";
+
+// 3. COLOUR 				==============================
+
+// Colour interaction semantics
+@import "colour";
+
+// 4. TEXTURE 				==============================
+
+// Alerts, badges, boxes and gradients
+@import "texture";
+
+// 5. ELEMENTS 				==============================
+
+// Figures, images and other elements
+@import "elements";
+
+// Button styles (optional)
+@import "buttons";
+
+// 6. LAYOUT 			==============================
+
+// Page level layout styles (banner, navigation, content, contentinfo)
+@import "page";
+
+//  7. VENDOR-SPECIFIC 		==============================
+//  8. MODERNIZR 			==============================
