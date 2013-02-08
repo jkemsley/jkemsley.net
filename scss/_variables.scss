@@ -12,15 +12,15 @@ $white 			: rgb(255,255,255);
 // 1. ROOT 					==============================
 
 $bodycolor : #dcdcdc;
-$textcolor : black;
+$textcolor : #6f6f6f;
 
 // 2. TYPOGRAPHY 			==============================
 
-$basefont : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$basefont : 'Josefin Sans', Arial, sans-serif;
 $basefontsize : 16;
 $baselineheight : 1.5em;
 $baseheadingfont : inherit;
-$baseheadingfontweight : bold;
+$baseheadingfontweight : 300;
 $baseheadingfontcolor : inherit;
 
 $altfont : Cambria, Georgia, Times, "Times New Roman";

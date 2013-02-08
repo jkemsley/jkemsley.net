@@ -68,11 +68,11 @@ body {
   padding: 0;
   width: 100%;
   background-color: transparent;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Josefin Sans", Arial, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5em;
-  color: black;
+  color: #6f6f6f;
 }
 
 /* Typography =================================================== */
@@ -80,7 +80,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 300;
   color: inherit;
   text-rendering: optimizelegibility;
 }
@@ -96,8 +96,8 @@ h2 small {
 h1,
 .h1 {
   margin-bottom: 0.75em;
-  font-size: 32px;
-  font-size: 3.2rem;
+  font-size: 64px;
+  font-size: 6.4rem;
   line-height: 1.2;
 }
 
@@ -277,14 +277,14 @@ dfn {
 /* line 154, ../scss/_typography.scss */
 ins {
   background-color: #f3f5f6;
-  color: black;
+  color: #6f6f6f;
   text-decoration: none;
 }
 
 /* line 159, ../scss/_typography.scss */
 mark {
   background-color: #f3f5f6;
-  color: black;
+  color: #6f6f6f;
   font-style: italic;
   font-weight: bold;
 }
@@ -530,7 +530,7 @@ a:hover, a:active {
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Josefin Sans", Arial, sans-serif;
   font-size: 14px;
   font-size: 1.4rem;
   color: #9c8611;
@@ -789,7 +789,7 @@ figure figcaption {
   padding: 6px 11px 6px;
   margin-bottom: 0;
   font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Josefin Sans", Arial, sans-serif;
   font-size: 12px;
   font-size: 1.2rem;
   line-height: 1.5em;
