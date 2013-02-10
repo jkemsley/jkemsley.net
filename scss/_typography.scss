@@ -17,7 +17,7 @@ color : $lightgrey; }
 h1,
 .h1 {
 margin-bottom : $baselineheight / 2;
-@include font-size(64);
+@include font-size(80);
 line-height : 1.2; }
 
 h2,

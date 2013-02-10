@@ -54,7 +54,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 /* line 20, ../scss/_site.scss */
 html {
-  background: gainsboro;
+  background: gainsboro url('../img/bg.jpg?1358190226');
   font-size: 62.5%;
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: #f3f5f6;
@@ -64,6 +64,7 @@ html {
 
 /* line 28, ../scss/_site.scss */
 body {
+  overflow: hidden;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -73,6 +74,12 @@ body {
   font-size: 1.6rem;
   line-height: 1.5em;
   color: #6f6f6f;
+}
+
+/* line 39, ../scss/_site.scss */
+.page, #home {
+  position: absolute;
+  width: 960px;
 }
 
 /* Typography =================================================== */
@@ -96,8 +103,8 @@ h2 small {
 h1,
 .h1 {
   margin-bottom: 0.75em;
-  font-size: 64px;
-  font-size: 6.4rem;
+  font-size: 80px;
+  font-size: 8rem;
   line-height: 1.2;
 }
 
@@ -519,205 +526,6 @@ a:hover, a:active {
 }
 
 /* Texture =================================================== */
-/* line 9, ../scss/_texture.scss */
-.alert {
-  margin-bottom: 1.5em;
-  padding: 8px 35px 8px 14px;
-  background-color: #fcf8e3;
-  border: 1px solid #f2e187;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  font-family: "Josefin Sans", Arial, sans-serif;
-  font-size: 14px;
-  font-size: 1.4rem;
-  color: #9c8611;
-}
-/* line 19, ../scss/_texture.scss */
-.alert .alert-heading {
-  color: inherit;
-}
-/* line 21, ../scss/_texture.scss */
-.alert .close {
-  position: relative;
-  top: -2px;
-  right: -21px;
-  float: right;
-  font-size: 21px;
-  font-size: 2.1rem;
-  font-weight: bold;
-  line-height: 18px;
-  color: inherit;
-}
-
-/* line 33, ../scss/_texture.scss */
-.alert-success {
-  background-color: #c5e6c5;
-  border-color: #a2d6a2;
-  color: #347834;
-}
-
-/* line 39, ../scss/_texture.scss */
-.alert-warning {
-  background-color: #fee7c7;
-  border-color: #fcd296;
-  color: #c17305;
-}
-
-/* line 45, ../scss/_texture.scss */
-.alert-error {
-  background-color: #f4cac8;
-  border-color: #eba19e;
-  color: #da4f49;
-}
-
-/* line 51, ../scss/_texture.scss */
-.alert-inverse {
-  background-color: #414141;
-  border-color: black;
-  color: white;
-}
-
-/* line 59, ../scss/_texture.scss */
-.alert-block {
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-/* line 65, ../scss/_texture.scss */
-.alert-block .alert-heading {
-  margin-bottom: 0.1875em;
-  font-size: inherit;
-  font-weight: bold;
-}
-/* line 74, ../scss/_texture.scss */
-.alert-block > p,
-.alert-block > ul {
-  margin-bottom: 0;
-}
-/* line 76, ../scss/_texture.scss */
-.alert-block p + p {
-  margin-top: 5px;
-}
-
-/* line 81, ../scss/_texture.scss */
-.badge {
-  padding: 1px 9px 2px;
-  font-size: 12px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  white-space: nowrap;
-  color: gray;
-  background-color: #e6e6e6;
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  -ms-border-radius: 9px;
-  -o-border-radius: 9px;
-  border-radius: 9px;
-  -webkit-transition: background-color 0.25s 0;
-  -webkit-transition-delay: linear;
-  -moz-transition: background-color 0.25s 0 linear;
-  -o-transition: background-color 0.25s 0 linear;
-  transition: background-color 0.25s 0 linear;
-}
-/* line 91, ../scss/_texture.scss */
-.badge:hover {
-  color: gray;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* line 98, ../scss/_texture.scss */
-.badge-error {
-  background-color: #da4f49;
-  color: white;
-}
-/* line 102, ../scss/_texture.scss */
-.badge-error:hover {
-  background-color: #9d2520;
-  color: white;
-}
-
-/* line 108, ../scss/_texture.scss */
-.badge-warning {
-  background-color: #faa732;
-  color: white;
-}
-/* line 112, ../scss/_texture.scss */
-.badge-warning:hover {
-  background-color: #c17305;
-  color: white;
-}
-
-/* line 118, ../scss/_texture.scss */
-.badge-success {
-  background-color: #5bb75b;
-  color: white;
-}
-/* line 122, ../scss/_texture.scss */
-.badge-success:hover {
-  background-color: #347834;
-  color: white;
-}
-
-/* line 128, ../scss/_texture.scss */
-.badge-info {
-  background-color: #d9edf7;
-  color: #247fad;
-}
-/* line 132, ../scss/_texture.scss */
-.badge-info:hover {
-  background-color: #85c5e5;
-}
-
-/* line 135, ../scss/_texture.scss */
-.badge-inverse {
-  background-color: #414141;
-  color: white;
-}
-/* line 139, ../scss/_texture.scss */
-.badge-inverse:hover {
-  background-color: #0e0e0e;
-  color: white;
-}
-
-/* line 165, ../scss/_texture.scss */
-.well {
-  min-height: 21px;
-  padding: 11px;
-  margin-bottom: 1.5em;
-  background-color: #f3f5f6;
-  border: 1px solid #b8c1cb;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 10px #d6dbe1;
-  -moz-box-shadow: inset 0 1px 10px #d6dbe1;
-  box-shadow: inset 0 1px 10px #d6dbe1;
-}
-/* line 174, ../scss/_texture.scss */
-.well p:last-child {
-  margin-bottom: 0;
-}
-
-/* line 177, ../scss/_texture.scss */
-.well-large {
-  padding: 22px;
-}
-
-/* line 179, ../scss/_texture.scss */
-.well-small {
-  padding: 6px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-}
-
 /* Elements =================================================== */
 /* line 5, ../scss/_elements.scss */
 hr {
@@ -780,274 +588,42 @@ figure figcaption {
 }
 
 /* Buttons =================================================== */
-/* line 3, ../scss/_buttons.scss */
-.btn {
-  display: inline-block;
-  *display: inline;
-  /* IE7 inline-block hack */
-  *zoom: 1;
-  padding: 6px 11px 6px;
-  margin-bottom: 0;
-  font-weight: bold;
-  font-family: "Josefin Sans", Arial, sans-serif;
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 1.5em;
-  color: #404040;
-  text-align: center;
-  vertical-align: middle;
-  background-color: #e6e6e6;
-  background-color: #d9d9d9;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d9d9d9));
-  background-image: -webkit-linear-gradient(#ffffff, #d9d9d9);
-  background-image: -moz-linear-gradient(#ffffff, #d9d9d9);
-  background-image: -o-linear-gradient(#ffffff, #d9d9d9);
-  background-image: linear-gradient(#ffffff, #d9d9d9);
-  background-repeat: repeat-x;
-  border: 1px solid #cccccc;
-  border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  cursor: pointer;
-  *margin-left: .3em;
-}
-/* line 29, ../scss/_buttons.scss */
-.btn:visited, .btn:hover {
-  color: #404040;
-  text-decoration: none;
+/* HOME =================================================== */
+/* line 2, ../scss/_page.scss */
+#home {
+  width: 800px;
 }
 
-/* line 35, ../scss/_buttons.scss */
-input[type="submit"].btn:hover {
-  border-color: #cccccc;
+/* line 7, ../scss/_page.scss */
+.home-header {
+  width: 505px;
+  text-align: right;
 }
-
-/* line 37, ../scss/_buttons.scss */
-.btn:first-child {
-  *margin-left: 0;
+/* line 11, ../scss/_page.scss */
+.home-header h1 {
+  padding-bottom: 35px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #c1c1c1;
 }
-
-/* line 41, ../scss/_buttons.scss */
-.btn-disabled {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
-  cursor: default;
+/* line 16, ../scss/_page.scss */
+.home-header h1 span {
+  color: #454545;
 }
-
-/* line 46, ../scss/_buttons.scss */
-.btn-error {
-  background-color: #c72f29;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2d353e), color-stop(100%, #c72f29));
-  background-image: -webkit-linear-gradient(#2d353e, #c72f29);
-  background-image: -moz-linear-gradient(#2d353e, #c72f29);
-  background-image: -o-linear-gradient(#2d353e, #c72f29);
-  background-image: linear-gradient(#2d353e, #c72f29);
-  background-repeat: repeat-x;
-  border-color: #b22a24;
-  border-bottom-color: #9d2520;
-  color: white;
+/* line 21, ../scss/_page.scss */
+.home-header .tag {
+  display: block;
+  height: 130px;
+  padding-right: 120px;
+  font-size: 72px;
+  font-size: 7.2rem;
+  font-weight: 300;
+  text-align: right;
+  line-height: 53px;
+  color: #454545;
+  background: url('../img/amp.png?1360526685') no-repeat right 30px;
 }
-/* line 55, ../scss/_buttons.scss */
-.btn-error:visited, .btn-error:hover {
-  color: white;
-}
-
-/* line 60, ../scss/_buttons.scss */
-.btn-info {
-  background-color: #afd9ee;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d9edf7), color-stop(100%, #afd9ee));
-  background-image: -webkit-linear-gradient(#d9edf7, #afd9ee);
-  background-image: -moz-linear-gradient(#d9edf7, #afd9ee);
-  background-image: -o-linear-gradient(#d9edf7, #afd9ee);
-  background-image: linear-gradient(#d9edf7, #afd9ee);
-  background-repeat: repeat-x;
-  border-color: #9acfea;
-  border-bottom-color: #85c5e5;
-  color: #247fad;
-}
-/* line 69, ../scss/_buttons.scss */
-.btn-info:visited, .btn-info:hover {
-  color: #247fad;
-}
-
-/* line 74, ../scss/_buttons.scss */
-.btn-inverse {
-  background-color: #272727;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #414141), color-stop(100%, #272727));
-  background-image: -webkit-linear-gradient(#414141, #272727);
-  background-image: -moz-linear-gradient(#414141, #272727);
-  background-image: -o-linear-gradient(#414141, #272727);
-  background-image: linear-gradient(#414141, #272727);
-  background-repeat: repeat-x;
-  border-color: #1b1b1b;
-  border-bottom-color: #0e0e0e;
-  color: white;
-}
-/* line 83, ../scss/_buttons.scss */
-.btn-inverse:visited, .btn-inverse:hover {
-  color: white;
-}
-
-/* line 88, ../scss/_buttons.scss */
-.btn-primary {
-  background-color: #181c20;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2d353e), color-stop(100%, #181c20));
-  background-image: -webkit-linear-gradient(#2d353e, #181c20);
-  background-image: -moz-linear-gradient(#2d353e, #181c20);
-  background-image: -o-linear-gradient(#2d353e, #181c20);
-  background-image: linear-gradient(#2d353e, #181c20);
-  background-repeat: repeat-x;
-  border-color: #0d0f12;
-  border-bottom-color: #020203;
-  color: white;
-}
-/* line 97, ../scss/_buttons.scss */
-.btn-primary:visited, .btn-primary:hover {
-  color: white;
-}
-
-/* line 102, ../scss/_buttons.scss */
-.btn-success {
-  background-color: #449b44;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5bb75b), color-stop(100%, #449b44));
-  background-image: -webkit-linear-gradient(#5bb75b, #449b44);
-  background-image: -moz-linear-gradient(#5bb75b, #449b44);
-  background-image: -o-linear-gradient(#5bb75b, #449b44);
-  background-image: linear-gradient(#5bb75b, #449b44);
-  background-repeat: repeat-x;
-  border-color: #3c893c;
-  border-bottom-color: #347834;
-}
-
-/* line 112, ../scss/_buttons.scss */
-.btn-warning {
-  background-color: #f39106;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #faa732), color-stop(100%, #f39106));
-  background-image: -webkit-linear-gradient(#faa732, #f39106);
-  background-image: -moz-linear-gradient(#faa732, #f39106);
-  background-image: -o-linear-gradient(#faa732, #f39106);
-  background-image: linear-gradient(#faa732, #f39106);
-  background-repeat: repeat-x;
-  border-color: #da8205;
-  border-bottom-color: #c17305;
-}
-
-/* line 122, ../scss/_buttons.scss */
-.btn-extlarge {
-  padding: 11px 22px;
-  font-size: 21px;
-  font-size: 2.1rem;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-
-/* line 128, ../scss/_buttons.scss */
-.btn.btn-large {
-  *padding-top: 7px;
-  *padding-bottom: 7px;
-}
-
-/* line 135, ../scss/_buttons.scss */
-.btn-large {
-  padding: 11px 22px;
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: normal;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-
-/* line 142, ../scss/_buttons.scss */
-.btn-small {
-  padding: 6px 10px;
-  font-size: 11px;
-  font-size: 1.1rem;
-  line-height: 16px;
-}
-
-/* line 148, ../scss/_buttons.scss */
-.btn-mini {
-  padding: 3px 5px;
-  font-size: 11px;
-  font-size: 1.1rem;
-  line-height: 14px;
-}
-
-/* line 154, ../scss/_buttons.scss */
-.btn-group {
-  position: relative;
-  *zoom: 1;
-  *margin-left: .3em;
-  margin-bottom: 1.5em;
-}
-/* line 160, ../scss/_buttons.scss */
-.btn-group .btn {
-  position: relative;
-  float: left;
-  margin-left: -1px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-}
-/* line 166, ../scss/_buttons.scss */
-.btn-group .btn:first-child {
-  margin-left: 0;
-  -moz-border-radius-topleft: 2px;
-  -webkit-border-top-left-radius: 2px;
-  border-top-left-radius: 2px;
-  -moz-border-radius-bottomleft: 2px;
-  -webkit-border-bottom-left-radius: 2px;
-  border-bottom-left-radius: 2px;
-}
-/* line 171, ../scss/_buttons.scss */
-.btn-group .btn:last-child {
-  -moz-border-radius-topright: 2px;
-  -webkit-border-top-right-radius: 2px;
-  border-top-right-radius: 2px;
-  -moz-border-radius-bottomright: 2px;
-  -webkit-border-bottom-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
-/* line 174, ../scss/_buttons.scss */
-.btn-group .btn.large:first-child {
-  margin-left: 0;
-  -moz-border-radius-topleft: 4px;
-  -webkit-border-top-left-radius: 4px;
-  border-top-left-radius: 4px;
-  -moz-border-radius-bottomleft: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-/* line 179, ../scss/_buttons.scss */
-.btn-group .btn.large:last-child {
-  -moz-border-radius-topright: 4px;
-  -webkit-border-top-right-radius: 4px;
-  border-top-right-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-/* line 184, ../scss/_buttons.scss */
-.btn-toolbar {
-  clear: both;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-}
-/* line 191, ../scss/_buttons.scss */
-.btn-toolbar .btn-group {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
+/* line 33, ../scss/_page.scss */
+.home-header .tag span {
+  padding: 0px 1px 0px 35px;
+  background: url('../img/d.png?1360515333') no-repeat 0px 52px;
 }

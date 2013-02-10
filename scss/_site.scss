@@ -18,7 +18,7 @@ width : device-width; }
 width : device-width; }
 
 html {
-background : $bodycolor;
+background : $bodycolor image-url('bg.jpg');
 font-size : 62.5%;
 -webkit-overflow-scrolling : touch;
 -webkit-tap-highlight-color : lighten($basecolor, 75%);
@@ -26,6 +26,7 @@ font-size : 62.5%;
 -ms-text-size-adjust : 100%; }
 
 body {
+overflow: hidden;
 margin : 0;
 padding : 0;
 width : 100%;
@@ -34,6 +35,12 @@ font-family : $basefont;
 @include font-size();
 line-height : $baselineheight;
 color : $textcolor; }
+
+.page {
+	position: absolute;
+	width: 960px;
+}
+
 
 // 2. TYPOGRAPHY 			==============================
 // 3. COLOUR 				==============================
