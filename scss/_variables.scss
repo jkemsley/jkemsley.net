@@ -11,7 +11,7 @@ $white 			: rgb(255,255,255);
 
 // 1. ROOT 					==============================
 
-$bodycolor : #dcdcdc;
+$bodycolor : #fefefe;
 $textcolor : #6f6f6f;
 
 // 2. TYPOGRAPHY 			==============================
@@ -51,6 +51,13 @@ $successcolor 	: rgb(91,183,91);
 $warningcolor 	: rgb(250,167,50);
 
 // 4. TEXTURE 				==============================
+
+// body
+
+$bodybordercolor	: #dcdcdc;
+$bodyborderwidth	: 15px;
+$bodyborderstyle	: solid;
+
 
 // alert
 

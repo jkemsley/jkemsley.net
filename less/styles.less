@@ -143,9 +143,14 @@
 /*---------------------------------------------------
 - Site styles
 -----------------------------------------------------*/
+html {
+  height: 100%;
+}
 
 body {
   overflow: hidden;
+  height: 100%;
+  border: 15px solid #dedede;
   font-size: 20px;
   font-family: "Terminal Dosis", sans-serif;
   color: #444;
@@ -677,4 +682,13 @@ body {
     }
     
   }
+}
+
+body:after, body:before {
+    content: '.';
+    height: 0;
+    border-top: 15px solid #dedede;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

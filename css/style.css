@@ -53,21 +53,30 @@ article, aside, figure, footer, header, hgroup, nav, section {
 }
 
 /* line 20, ../scss/_site.scss */
+* {
+  moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 26, ../scss/_site.scss */
 html {
-  background: gainsboro url('../img/bg.jpg?1358190226');
+  background: #fefefe url('../img/bg-light.png?1360619347');
   font-size: 62.5%;
+  height: 100%;
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: #f3f5f6;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* line 28, ../scss/_site.scss */
+/* line 35, ../scss/_site.scss */
 body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 100%;
+  height: 100%;
+  border: 15px solid gainsboro;
   background-color: transparent;
   font-family: "Josefin Sans", Arial, sans-serif;
   font-size: 16px;
@@ -75,8 +84,40 @@ body {
   line-height: 1.5em;
   color: #6f6f6f;
 }
+/* line 47, ../scss/_site.scss */
+body:before, body:after {
+  content: '.';
+  height: 0;
+  border-top: 15px solid gainsboro;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
-/* line 39, ../scss/_site.scss */
+/* line 57, ../scss/_site.scss */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  z-index: 999;
+  border-top: 15px solid gainsboro;
+  border-left: 15px solid gainsboro;
+  border-right: 15px solid gainsboro;
+}
+/* line 68, ../scss/_site.scss */
+nav ul {
+  display: block;
+  list-style: none;
+  padding: 0px;
+}
+/* line 72, ../scss/_site.scss */
+nav ul li {
+  display: inline;
+}
+
+/* line 78, ../scss/_site.scss */
 .page, #home {
   position: absolute;
   width: 960px;

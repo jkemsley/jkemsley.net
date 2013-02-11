@@ -17,24 +17,63 @@ width : device-width; }
 @viewport { 
 width : device-width; }
 
+* {
+	moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 html {
-background : $bodycolor image-url('bg.jpg');
+background : $bodycolor image-url('bg-light.png');
 font-size : 62.5%;
+height: 100%;
 -webkit-overflow-scrolling : touch;
 -webkit-tap-highlight-color : lighten($basecolor, 75%);
 -webkit-text-size-adjust : 100%;
 -ms-text-size-adjust : 100%; }
 
 body {
-overflow: hidden;
-margin : 0;
-padding : 0;
-width : 100%;
-background-color : transparent;
-font-family : $basefont;
-@include font-size();
-line-height : $baselineheight;
-color : $textcolor; }
+	overflow: hidden;
+	margin : 0;
+	padding : 0;
+	height: 100%;
+	border: $bodyborderwidth $bodyborderstyle $bodybordercolor;
+	background-color : transparent;
+	font-family : $basefont;
+	@include font-size();
+	line-height : $baselineheight;
+	color : $textcolor; 
+
+	&:before, &:after {
+		content: '.';
+		height: 0;
+		border-top: $bodyborderwidth $bodyborderstyle $bodybordercolor;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}
+}
+
+nav {
+	position: fixed;
+	top:0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.9);
+	width: 100%;
+	z-index: 999;
+	border-top: $bodyborderwidth $bodyborderstyle $bodybordercolor;
+	border-left: $bodyborderwidth $bodyborderstyle $bodybordercolor;
+	border-right: $bodyborderwidth $bodyborderstyle $bodybordercolor;
+
+	ul {
+		display: block;
+		list-style: none;
+		padding: 0px;
+		li {
+			display: inline;
+		}	
+	}
+}
 
 .page {
 	position: absolute;
