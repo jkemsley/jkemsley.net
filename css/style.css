@@ -61,7 +61,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 /* line 26, ../scss/_site.scss */
 html {
-  background: #fefefe url('../img/bg-light.png?1360619347');
+  background: #fefefe url('../img/bg-light.png?1360706080');
   font-size: 62.5%;
   height: 100%;
   -webkit-overflow-scrolling: touch;
@@ -99,25 +99,41 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.6);
   width: 100%;
   z-index: 999;
   border-top: 15px solid gainsboro;
   border-left: 15px solid gainsboro;
   border-right: 15px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
 }
-/* line 68, ../scss/_site.scss */
+/* line 69, ../scss/_site.scss */
 nav ul {
   display: block;
   list-style: none;
   padding: 0px;
+  margin-top: 18px;
+  text-align: right;
 }
-/* line 72, ../scss/_site.scss */
+/* line 77, ../scss/_site.scss */
 nav ul li {
-  display: inline;
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 81, ../scss/_site.scss */
+nav ul li a, nav ul li a:visited {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "Droid Serif", serif;
+  text-transform: lowercase;
+  color: #6f6f6f;
+}
+/* line 88, ../scss/_site.scss */
+nav ul li a:hover, nav ul li a:visited:hover {
+  text-decoration: none;
 }
 
-/* line 78, ../scss/_site.scss */
+/* line 96, ../scss/_site.scss */
 .page, #home {
   position: absolute;
   width: 960px;
@@ -260,7 +276,7 @@ blockquote {
   margin: 0 0 1.5em -24px;
   padding-left: 24px;
   border-left: 2px solid #c7ced6;
-  font-family: Cambria, Georgia, Times, "Times New Roman";
+  font-family: "Droid Serif", serif;
   font-style: normal;
 }
 
