@@ -1,7 +1,16 @@
 /* HOME =================================================== */
+
 #home {
 	@extend .page;
-	width: 800px;
+	top: 0px;
+    left: -500px;
+	width: 1500px;
+    height: 832px;
+	background: image-url('port.png') no-repeat 0 0;
+}
+
+.home-content {
+	margin: 200px 0px 0px 870px;
 }
 
 .home-header {
@@ -11,6 +20,8 @@
 	h1 {
 		padding-bottom: 35px;
 		margin-bottom: 10px;
+		font-family: $altfont;
+		@include font-size(72);
 		border-bottom: 1px solid #c1c1c1;
 
 		span {
@@ -35,4 +46,8 @@
 			background: image-url('d.png') no-repeat 0px 52px;
 		}
 	}
+}
+
+#about, #portfolio, #contact {
+	display: none;
 }
