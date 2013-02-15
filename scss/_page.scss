@@ -3,14 +3,14 @@
 #home {
 	@extend .page;
 	top: 0px;
-    left: -500px;
+    left: -550px;
 	width: 1500px;
     height: 832px;
 	background: image-url('port.png') no-repeat 0 0;
 }
 
 .home-content {
-	margin: 200px 0px 0px 870px;
+	margin: 195px 0px 0px 900px;
 }
 
 .home-header {
@@ -18,7 +18,7 @@
 	text-align: right;
 
 	h1 {
-		padding-bottom: 35px;
+		padding-bottom: 20px;
 		margin-bottom: 10px;
 		font-family: $altfont;
 		@include font-size(72);

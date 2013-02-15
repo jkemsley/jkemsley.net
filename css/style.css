@@ -71,13 +71,10 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-/* line 36, ../scss/_site.scss */
+/* line 37, ../scss/_site.scss */
 body {
   display: table-row;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
   font-family: "Josefin Sans", Arial, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
@@ -85,7 +82,7 @@ body {
   color: #6f6f6f;
 }
 
-/* line 48, ../scss/_site.scss */
+/* line 49, ../scss/_site.scss */
 .wrapper {
   position: relative;
   display: table-cell;
@@ -94,7 +91,7 @@ body {
   background: #fefefe url('../img/bg-light.png?1360706080');
 }
 
-/* line 56, ../scss/_site.scss */
+/* line 57, ../scss/_site.scss */
 nav {
   position: fixed;
   top: 0;
@@ -107,7 +104,7 @@ nav {
   border-right: 15px solid gainsboro;
   border-bottom: 1px solid gainsboro;
 }
-/* line 68, ../scss/_site.scss */
+/* line 69, ../scss/_site.scss */
 nav ul {
   display: block;
   list-style: none;
@@ -115,12 +112,12 @@ nav ul {
   margin-top: 18px;
   text-align: right;
 }
-/* line 76, ../scss/_site.scss */
+/* line 77, ../scss/_site.scss */
 nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 80, ../scss/_site.scss */
+/* line 81, ../scss/_site.scss */
 nav ul li a, nav ul li a:visited {
   font-size: 18px;
   font-size: 1.8rem;
@@ -128,12 +125,12 @@ nav ul li a, nav ul li a:visited {
   text-transform: lowercase;
   color: #6f6f6f;
 }
-/* line 87, ../scss/_site.scss */
+/* line 88, ../scss/_site.scss */
 nav ul li a:hover, nav ul li a:visited:hover {
   text-decoration: none;
 }
 
-/* line 95, ../scss/_site.scss */
+/* line 96, ../scss/_site.scss */
 .page, #home {
   position: absolute;
   width: 960px;
@@ -649,7 +646,7 @@ figure figcaption {
 /* line 3, ../scss/_page.scss */
 #home {
   top: 0px;
-  left: -500px;
+  left: -550px;
   width: 1500px;
   height: 832px;
   background: url('../img/port.png?1358190226') no-repeat 0 0;
@@ -657,7 +654,7 @@ figure figcaption {
 
 /* line 12, ../scss/_page.scss */
 .home-content {
-  margin: 200px 0px 0px 870px;
+  margin: 195px 0px 0px 900px;
 }
 
 /* line 16, ../scss/_page.scss */
@@ -667,7 +664,7 @@ figure figcaption {
 }
 /* line 20, ../scss/_page.scss */
 .home-header h1 {
-  padding-bottom: 35px;
+  padding-bottom: 20px;
   margin-bottom: 10px;
   font-family: "Droid Serif", serif;
   font-size: 72px;
@@ -689,7 +686,7 @@ figure figcaption {
   text-align: right;
   line-height: 53px;
   color: #454545;
-  background: url('../img/amp.png?1360526685') no-repeat right 30px;
+  background: url('../img/amp.png?1360871361') no-repeat right 30px;
 }
 /* line 44, ../scss/_page.scss */
 .home-header .tag span {
