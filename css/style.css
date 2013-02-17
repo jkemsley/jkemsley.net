@@ -52,13 +52,6 @@ article, aside, figure, footer, header, hgroup, nav, section {
   width: device-width;
 }
 
-/* line 20, ../scss/_site.scss */
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 /* line 26, ../scss/_site.scss */
 html {
   display: table;
@@ -96,15 +89,18 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(238, 238, 238, 0.9);
   width: 100%;
   z-index: 999;
   border-top: 15px solid gainsboro;
   border-left: 15px solid gainsboro;
   border-right: 15px solid gainsboro;
   border-bottom: 1px solid gainsboro;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 69, ../scss/_site.scss */
+/* line 72, ../scss/_site.scss */
 nav ul {
   display: block;
   list-style: none;
@@ -112,12 +108,12 @@ nav ul {
   margin-top: 18px;
   text-align: right;
 }
-/* line 77, ../scss/_site.scss */
+/* line 80, ../scss/_site.scss */
 nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 81, ../scss/_site.scss */
+/* line 84, ../scss/_site.scss */
 nav ul li a, nav ul li a:visited {
   font-size: 18px;
   font-size: 1.8rem;
@@ -125,13 +121,13 @@ nav ul li a, nav ul li a:visited {
   text-transform: lowercase;
   color: #6f6f6f;
 }
-/* line 88, ../scss/_site.scss */
+/* line 91, ../scss/_site.scss */
 nav ul li a:hover, nav ul li a:visited:hover {
   text-decoration: none;
 }
 
-/* line 96, ../scss/_site.scss */
-.page, #home {
+/* line 99, ../scss/_site.scss */
+.page, #home, #about, #portfolio, #contact {
   position: absolute;
   width: 960px;
 }
@@ -646,20 +642,20 @@ figure figcaption {
 /* line 3, ../scss/_page.scss */
 #home {
   top: 0px;
-  left: -550px;
+  left: -563px;
   width: 1500px;
-  height: 832px;
-  background: url('../img/port.png?1358190226') no-repeat 0 0;
+  height: 987px;
+  background: url('../img/port.png?1361117514') no-repeat 0 0;
 }
 
 /* line 12, ../scss/_page.scss */
 .home-content {
-  margin: 195px 0px 0px 900px;
+  width: 505px;
+  margin: 353px 0px 0px 913px;
 }
 
-/* line 16, ../scss/_page.scss */
+/* line 17, ../scss/_page.scss */
 .home-header {
-  width: 505px;
   text-align: right;
 }
 /* line 20, ../scss/_page.scss */
@@ -673,7 +669,7 @@ figure figcaption {
 }
 /* line 27, ../scss/_page.scss */
 .home-header h1 span {
-  color: #454545;
+  color: #a47578;
 }
 /* line 32, ../scss/_page.scss */
 .home-header .tag {
@@ -695,6 +691,223 @@ figure figcaption {
 }
 
 /* line 51, ../scss/_page.scss */
-#about, #portfolio, #contact {
-  display: none;
+.home-footer {
+  margin-top: 100px;
+}
+/* line 53, ../scss/_page.scss */
+.home-footer .or {
+  padding: 45px 0 30px 0;
+  font-family: "Droid Serif", serif;
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 0px white;
+  color: #a9a9a9;
+  background: url('../img/or.png?1358190226') no-repeat center 62px;
+}
+/* line 65, ../scss/_page.scss */
+.home-footer .scroll {
+  padding: 0 0 105px 0;
+  font-size: 30px;
+  font-size: 3rem;
+  font-family: "Droid Serif", serif;
+  text-align: center;
+  text-shadow: 1px 1px 0px white;
+  color: #a47578;
+  background: url('../img/scroll.png?1358190226') no-repeat bottom center;
+}
+
+/* ABOUT =================================================== */
+/* line 78, ../scss/_page.scss */
+#about {
+  top: 1200px;
+  left: 540px;
+  width: 1598px;
+  height: 800px;
+  background: url('../img/about.png?1358190226') no-repeat 0 0;
+}
+
+/* line 87, ../scss/_page.scss */
+.about-content {
+  clear: both;
+  width: 1200px;
+  height: 330px;
+  padding-top: 440px;
+  margin: 0 auto;
+}
+/* line 94, ../scss/_page.scss */
+.about-content .blurb {
+  float: left;
+  width: 40%;
+}
+/* line 99, ../scss/_page.scss */
+.about-content .skills {
+  float: right;
+  width: 55%;
+}
+
+/* line 106, ../scss/_page.scss */
+.blurb h1 {
+  margin-bottom: 10px;
+  font-size: 72px;
+  font-size: 7.2rem;
+}
+/* line 111, ../scss/_page.scss */
+.blurb h1 span {
+  color: #a47578;
+}
+/* line 116, ../scss/_page.scss */
+.blurb p {
+  font-family: "Droid Serif", serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+/* line 122, ../scss/_page.scss */
+.skills {
+  overflow: hidden;
+  height: 175px;
+  padding: 30px 0;
+  margin-top: 40px;
+  border: 2px dashed #c7c7c7;
+  -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.04);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.04);
+}
+/* line 130, ../scss/_page.scss */
+.skills .skill {
+  position: relative;
+  float: right;
+  width: 27%;
+  height: 175px;
+  padding: 0px 20px;
+  list-style: none;
+  border-right: 2px dashed #c7c7c7;
+}
+/* line 139, ../scss/_page.scss */
+.skills .skill .skill_wrap {
+  position: absolute;
+  top: 0px;
+  -webkit-transition: top 0.2s;
+  -moz-transition: top 0.2s;
+  -o-transition: top 0.2s;
+  transition: top 0.2s;
+}
+/* line 144, ../scss/_page.scss */
+.skills .skill .skill_wrap:hover {
+  top: -140px;
+}
+/* line 147, ../scss/_page.scss */
+.skills .skill .skill_wrap:hover h2 {
+  margin-bottom: 5px;
+}
+/* line 151, ../scss/_page.scss */
+.skills .skill .skill_wrap:hover img {
+  margin-bottom: 20px;
+}
+/* line 157, ../scss/_page.scss */
+.skills .skill img {
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: margin-bottom 0.2s;
+  -moz-transition: margin-bottom 0.2s;
+  -o-transition: margin-bottom 0.2s;
+  transition: margin-bottom 0.2s;
+}
+/* line 163, ../scss/_page.scss */
+.skills .skill h2 {
+  height: 50px;
+  margin: 15px 0 30px 0;
+  text-align: center;
+  font-family: "Droid Serif", serif;
+  font-size: 22px;
+  font-size: 2.2rem;
+  color: #a47578;
+  -webkit-transition: margin-bottom 0.2s;
+  -moz-transition: margin-bottom 0.2s;
+  -o-transition: margin-bottom 0.2s;
+  transition: margin-bottom 0.2s;
+}
+/* line 173, ../scss/_page.scss */
+.skills .skill p {
+  width: 180px;
+  margin: 0px;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-family: "Droid Serif", serif;
+  text-align: center;
+}
+/* line 182, ../scss/_page.scss */
+.skills .pm {
+  border: 0px;
+}
+/* line 185, ../scss/_page.scss */
+.skills .pm h2 {
+  margin-right: 20px;
+}
+
+/* PORT =================================================== */
+/* line 193, ../scss/_page.scss */
+#portfolio {
+  top: 630px;
+  left: 2110px;
+  width: 1500px;
+  height: 800px;
+}
+
+/* line 201, ../scss/_page.scss */
+.portfolio-content {
+  position: relative;
+  margin: 0 auto;
+  font-size: 0;
+  text-align: center;
+}
+/* line 207, ../scss/_page.scss */
+.portfolio-content .compiling {
+  position: absolute;
+  top: 0px;
+  left: 538px;
+  width: 434px;
+  height: 400px;
+  background: url('../img/sign.png?1358190226') no-repeat 0 0;
+}
+/* line 216, ../scss/_page.scss */
+.portfolio-content .shelf-left {
+  display: inline-block;
+  width: 432px;
+  height: 499px;
+  z-index: -2;
+  background: url('../img/shelf-left.png?1358190226') no-repeat 0 0;
+}
+/* line 224, ../scss/_page.scss */
+.portfolio-content .shelf-middle {
+  display: inline-block;
+  width: 398px;
+  height: 499px;
+  z-index: -2;
+  background: url('../img/shelf-middle.png?1358190226') repeat-x 0 -10px;
+}
+/* line 232, ../scss/_page.scss */
+.portfolio-content .shelf-right {
+  display: inline-block;
+  width: 395px;
+  height: 499px;
+  z-index: -2;
+  background: url('../img/shelf-right.png?1358190226') no-repeat 0 0;
+}
+
+/* CONTACT =================================================== */
+/* line 243, ../scss/_page.scss */
+#contact {
+  top: 1300px;
+  left: 3250px;
+  width: 750px;
+  height: 800px;
+  padding-top: 100px;
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #454545;
+  background: url('../img/postbox.png?1358190226') no-repeat right 0;
 }

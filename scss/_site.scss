@@ -17,11 +17,11 @@ width : device-width; }
 @viewport { 
 width : device-width; }
 
-* {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
+// * {
+// 	-moz-box-sizing: border-box;
+// 	-webkit-box-sizing: border-box;
+// 	box-sizing: border-box;
+// }
 
 html {
 	display: table;
@@ -58,13 +58,16 @@ nav {
 	position: fixed;
 	top:0;
 	left: 0;
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(238, 238, 238, 0.9);
 	width: 100%;
 	z-index: 999;
 	border-top: $bodyborderwidth $bodyborderstyle $bodybordercolor;
 	border-left: $bodyborderwidth $bodyborderstyle $bodybordercolor;
 	border-right: $bodyborderwidth $bodyborderstyle $bodybordercolor;
 	border-bottom: 1px $bodyborderstyle $bodybordercolor;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 
 	ul {
 		display: block;

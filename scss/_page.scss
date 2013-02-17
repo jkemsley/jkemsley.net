@@ -3,18 +3,18 @@
 #home {
 	@extend .page;
 	top: 0px;
-    left: -550px;
+    left: -563px;
 	width: 1500px;
-    height: 832px;
+    height: 987px;
 	background: image-url('port.png') no-repeat 0 0;
 }
 
 .home-content {
-	margin: 195px 0px 0px 900px;
+	width: 505px;
+	margin: 353px 0px 0px 913px;
 }
 
 .home-header {
-	width: 505px;
 	text-align: right;
 
 	h1 {
@@ -25,7 +25,7 @@
 		border-bottom: 1px solid #c1c1c1;
 
 		span {
-			color: #454545;
+			color: $baseheadingfontcolorhighlight;
 		}
 	}
 
@@ -48,6 +48,207 @@
 	}
 }
 
-#about, #portfolio, #contact {
-	display: none;
+.home-footer {
+	margin-top: 100px;
+	.or {
+		padding: 45px 0 30px 0;
+		font-family: $altfont;
+		@include font-size(20);
+		font-weight: bold;
+		line-height: 30px;
+		text-align: center;
+		@include single-text-shadow(1px, 1px, 0px, false, #fff);
+		color: #a9a9a9;
+		background: image-url('or.png') no-repeat center 62px; 
+	}
+
+	.scroll {
+		padding: 0 0 105px 0;
+		@include font-size(30);
+        font-family: $altfont;
+        text-align: center;
+        @include single-text-shadow(1px, 1px, 0px, false, #fff);
+        color: $baseheadingfontcolorhighlight;
+        background: image-url('scroll.png') no-repeat bottom center;
+	}
+}
+
+/* ABOUT =================================================== */
+
+#about {
+	@extend .page;
+	top: 1200px;
+    left: 540px;
+    width: 1598px;
+    height: 800px;
+    background: image-url('about.png') no-repeat 0 0;
+}
+
+.about-content {
+	clear: both;
+	width: 1200px;
+	height: 330px;
+	padding-top: 440px;
+	margin: 0 auto;
+
+	.blurb {
+		float: left;
+		width: 40%;
+	}
+
+	.skills {
+		float: right;
+		width: 55%;
+	}
+}
+
+.blurb {
+	h1 {
+		margin-bottom: 10px;
+		// font-family: $altfont;
+		@include font-size(72);
+
+		span {
+			color: $baseheadingfontcolorhighlight;
+		}
+	}
+
+	p {
+		font-family: $altfont;
+		@include font-size(12);
+	}
+}
+
+.skills {
+	overflow: hidden;
+	height: 175px;
+	padding: 30px 0;
+	margin-top: 40px;
+	border: 2px dashed #c7c7c7;
+    @include single-box-shadow(rgba(0, 0, 0, 0.04), 0, 0, 50px, false, true);
+
+	.skill {
+		position: relative;
+		float: right;
+		width: 27%;
+		height: 175px;
+		padding: 0px 20px;
+    	list-style: none;
+    	border-right: 2px dashed #c7c7c7;
+
+    	.skill_wrap {
+    		position: absolute;
+    		top: 0px;
+    		@include single-transition(top, 0.2s);
+
+            &:hover {
+            	top: -140px;
+
+            	h2 {
+            		margin-bottom: 5px;
+            	}
+
+            	img {
+            		margin-bottom: 20px;
+            	}
+            }
+    	}
+
+    	img {
+    		display: block;
+    		margin: 0 auto;
+    		@include single-transition(margin-bottom, 0.2s);
+    	}
+
+    	h2 {
+    		height: 50px;
+    		margin: 15px 0 30px 0;
+    		text-align: center;
+    		font-family: $altfont;
+    		@include font-size(22);
+    		color: $baseheadingfontcolorhighlight;
+    		@include single-transition(margin-bottom, 0.2s);
+    	}
+
+    	p {
+    		width: 180px;
+    		margin: 0px;
+    		@include font-size(12);
+    		font-family: $altfont;
+    		text-align: center;
+    	}
+	}
+
+	.pm {
+		border: 0px;
+
+		h2 {
+			margin-right: 20px;
+		}
+	}
+}
+
+/* PORT =================================================== */
+
+#portfolio {
+	@extend .page;
+	top: 630px;
+	left: 2110px;
+	width: 1500px;
+	height: 800px;
+}
+
+.portfolio-content {
+	position: relative;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+
+    .compiling {
+    	position: absolute;
+		top: 0px;
+		left: 538px;
+		width: 434px;
+		height: 400px;
+		background: image-url('sign.png') no-repeat 0 0;
+    }
+
+    .shelf-left {
+    	display: inline-block;
+		width: 432px;
+		height: 499px;
+		z-index: -2;
+		background: image-url('shelf-left.png') no-repeat 0 0;
+    }
+
+    .shelf-middle {
+		display: inline-block;
+		width: 398px;
+		height: 499px;
+		z-index: -2;
+		background: image-url('shelf-middle.png') repeat-x 0 -10px;
+    }
+
+    .shelf-right {
+		display: inline-block;
+		width: 395px;
+		height: 499px;
+		z-index: -2;
+		background: image-url('shelf-right.png') no-repeat 0 0;
+    }
+}
+
+/* CONTACT =================================================== */
+
+#contact {
+	@extend .page;
+	top: 1300px;
+    left: 3250px;
+    width: 750px;
+    height: 800px;
+    padding-top: 100px;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #454545;
+    background: image-url('postbox.png') no-repeat right 0;
 }
