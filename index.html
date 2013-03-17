@@ -1,182 +1,275 @@
-<!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-       More info: h5bp.com/i/378 -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
 
-  <title></title>
-  <meta name="description" content="">
+    <meta name="description" content="I'm Jody Kemsley a website and application developer/designer.">
+    <meta name="author" content="Jody Kemsley">
 
-  <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100' rel='stylesheet' type='text/css'>
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
-  <link rel="stylesheet/less" type="text/css" href="less/styles.less">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
 
-  <!-- All JavaScript at the bottom, except this Modernizr build.
-       Modernizr enables HTML5 elements & feature detects for optimal performance.
-       Create your own custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
-</head>
-<body>
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
-       chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+        <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
 
-  <nav class="fixed">
-    <ul class="navi">
-      <li class="nav homeface">
-        <a href="#home">
-          <p class="nav_title">Home</p>
-        </a>
-      </li>
-      <li class="nav aboutskills">
-        <a href="#about">
-          <p class="nav_title">About</p>
-        </a>
-      </li>
-      <li class="nav port">
-        <a href="#portfolio">
-          <p class="nav_title">Portfolio</p>
-        </a>
-      </li>
-      <li class="nav cont">
-        <a href="#contact">
-          <p class="nav_title">Contact</p>
-        </a>
-      </li>
-    </ul>
-  </nav>
+    
+    <link rel="stylesheet" href="css/style.css">
 
+    <script src="js/vendor/modernizr.min.js"></script>
+  </head>
+  <body id="jkemsley-net" class="one-page-site">
+    <!-- <a href="img/radical_thumb.jpg" rel="lightbox" class="tab-image"> </a> -->
   <div class="wrapper">
-    <div class="page home">
-      <div class="hometext">
-        <div class="tag">
-          <h1>Jody <span>Kemsley</span></h1>
-          <p>Web designer &amp; developer</p>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- / navigation -->
+    <nav role="navigation">
+      <div class="nav-wrap">
+        <ul class="home-nav">
+          <li class="site-logo"><a href="#home"><span class="hide">Home</span></a></li>
+          <li><a href="#home">Jody <span>Kemsley</span></a></li>
+        </ul>
+        <ul class="nav">
+          <li class="about"><a href="#about">About</a></li>
+          <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+          <li class="contact"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ______________________________________________________________________ -->
+
+    <div class="site">
+
+      <!-- / home-page -->
+      <article id="home">
+          <div class="page-content home-content">
+            <header class="page-header home-header">
+              <h1>Jody <span>Kemsley</span></h1>
+              <div class="tag">
+                <i class="amp">
+                  &amp;
+                </i>
+                web designer
+                <span>eveloper</span>
+              </div>
+            </header>
+            <h2 class="teaser">Currently based in the <span>UK</span>, I thrive on <span>creating</span> great <span>web solutions</span> coupled with an unwavering <span>thirst to learn</span>. <br />When I am not on my <span>puter</span>, you will usually find me on a Tennis Court or Football pitch trying to be all <span>Pro</span>.</h2>
+            <footer class="page-footer home-footer">
+              <!-- <p class="or">or</p> -->
+              <p class="scroll">scroll to see more</p>
+            </footer>
+          </div>
+      </article>
+      <!-- ______________________________________________________________________ -->
+
+      <!-- / about-page -->
+      <article id="about">
+        <div class="page-content about-content">
+          <div class="blurb">
+            <h1>More About Me</h1>
+            <p>As a Web Developer, I thrive on crafting solutions to development issues and finding ways to deliver outstanding user experience. Alongside Web Development, I am continuously building on my existing Design and Project Management skills.</p>
+            <p>Away from the office, I enjoy the ‘great outdoors’. If I’m not walking or camping in the countryside, I can usually be found on the football pitch or playing tennis.</p>
+          </div>
+          <div class="myskills">
+            <h1>Skillset</h1>
+            <ul dir="rtl">
+              <li><span>PHP</span></li>
+              <li><span>Ruby</span></li>
+              <li><span>Java</span></li>
+              <li><span>Javascript</span></li>
+              <li><span>HTML5</span></li>
+              <li><span>CSS3</span></li>
+              <li><span>Photoshop</span></li>
+              <li><span>Illustrator</span></li>
+              <li><span>Agile PM</span></li>
+            </ul>
+          </div>
         </div>
-        <nav class="main">
-          <ul class="navi">
-            <li class="nav aboutskills">
-              <a href="#about">
-                
-                <span class="nav_blurb"><i>who, what and why?!</i></span>
-              </a>
-            </li>
-            <li class="nav port">
-              <a href="#portfolio">
-                <span class="nav_blurb"><i>some of <br /> my work</i></span>
-              </a>
-            </li>
-            <li class="nav cont">
-              <a href="#contact">
-                <span class="nav_blurb"><i>Let's<br /> talk</i></span>
+      </article>
+      <!-- ______________________________________________________________________ -->
+
+      <!-- / portfolio-page -->
+      <article id="portfolio">
+        <div class="page-content portfolio-content">
+          <!-- <div class="compiling"></div> -->
+          <ul class="port-items">
+            <li>
+              <a class="port-item" id="radical">
               </a>
             </li>
           </ul>
-        </nav>
-        <div class="or">
-          or
+          <div class="shelf-left"></div>
+          <div class="shelf-middle"></div>
+          <div class="shelf-right"></div>
         </div>
-        <div class="scroll">
-          <i>scroll</i>
+      </article>
+      <!-- ______________________________________________________________________ -->
+
+      <!-- / portfolio-item-page -->
+      <article id="tablet">
+        <div class="page-content tablet-content">
+          <div class="tab-content-wrap">
+            <div class="tab-controls">
+              <a class="tab-back"><div class="back-arrow"></div>Back</a>
+              <ul class="tab-prev-next">
+                <li><a class="tab-prev"><div class="back-arrow"></div>prev</a></li>
+                <li><a class="tab-next"><div class="for-arrow"></div>next</a></li>
+              </ul>
+            </div>
+            <ul class="tab-items" id="tablet-items">
+              <li class="tab-item" id="radical_slide">
+                  <div class="tab-right">
+                    <div class="tab-image">
+                      <ul class="tab-browser">
+                        <li class="tab-browser-btn"></li>
+                        <li class="tab-browser-btn"></li>
+                        <li class="tab-browser-btn"></li>
+                        <li class="tab-browser-adrs"></li>
+                      </ul>
+                      <img src="img/radical.jpg">
+                    </div>
+                    <a href="http://www.kent.ac.uk/english/radicaldistrust/index.html" class="tab-url">Visit site</a>
+                  </div>
+                  <h1>Radical distrust</h1>
+                  <ul class="tab-tags">
+                    <li>Photoshop</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>Javascript/JQuery</li>
+                  </ul>
+                  <div class="tab-info">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida ullamcorper libero ullamcorper pharetra. Phasellus tincidunt, diam ut convallis pharetra, sapien massa pellentesque nunc, eget accumsan lectus diam in nisl. 
+                    </p>
+                    <p>
+                      Integer rhoncus suscipit lacinia. Praesent justo nibh, semper eu mollis placerat, gravida in nulla. Duis blandit, libero quis dapibus malesuada, enim tellus sodales mi.
+                    </p>
+                  </div>
+              </li>
+              <li class="tab-item">
+                  <div class="tab-right">
+                    <div class="tab-image">
+                      <ul class="tab-browser">
+                        <li class="tab-browser-btn"></li>
+                        <li class="tab-browser-btn"></li>
+                        <li class="tab-browser-btn"></li>
+                        <li class="tab-browser-adrs"></li>
+                      </ul>
+                      <img src="img/radical.jpg">
+                    </div>
+                    <a href="http://www.kent.ac.uk/english/radicaldistrust/index.html" class="tab-url">Visit site</a>
+                  </div>
+                  <h1>Radical distrust</h1>
+                  <ul class="tab-tags">
+                    <li>Photoshop</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>Javascript/JQuery</li>
+                  </ul>
+                  <div class="tab-info">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida ullamcorper libero ullamcorper pharetra. Phasellus tincidunt, diam ut convallis pharetra, sapien massa pellentesque nunc, eget accumsan lectus diam in nisl. 
+                    </p>
+                    <p>
+                      Integer rhoncus suscipit lacinia. Praesent justo nibh, semper eu mollis placerat, gravida in nulla. Duis blandit, libero quis dapibus malesuada, enim tellus sodales mi.
+                    </p>
+                  </div>
+              </li>
+              <li class="tab-item">
+                  <div class="tab-right">
+                    <div class="tab-image">
+                      <ul class="tab-browser">
+                        <li class="tab-browser-btn"></li>
+                        <li class="tab-browser-btn"></li>
+                        <li class="tab-browser-btn"></li>
+                        <li class="tab-browser-adrs"></li>
+                      </ul>
+                      <img src="img/radical.jpg">
+                    </div>
+                    <a href="http://www.kent.ac.uk/english/radicaldistrust/index.html" class="tab-url">Visit site</a>
+                  </div>
+                  <h1>Radical distrust</h1>
+                  <ul class="tab-tags">
+                    <li>Photoshop</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>Javascript/JQuery</li>
+                  </ul>
+                  <div class="tab-info">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida ullamcorper libero ullamcorper pharetra. Phasellus tincidunt, diam ut convallis pharetra, sapien massa pellentesque nunc, eget accumsan lectus diam in nisl. 
+                    </p>
+                    <p>
+                      Integer rhoncus suscipit lacinia. Praesent justo nibh, semper eu mollis placerat, gravida in nulla. Duis blandit, libero quis dapibus malesuada, enim tellus sodales mi.
+                    </p>
+                  </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tablet-bg">
+          </div>
         </div>
-      </div>
-    </div>
+      </article
+      <!-- ______________________________________________________________________ -->
 
-    <div class="page line1">
-    </div>
-
-    <div class="page about">
-      <div class="about-wrap">
-        <div class="blurb">
-          <h2>About <span>me</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet molestie est, luctus sodales justo tincidunt id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas pulvinar vulputate placerat. Morbi lacinia dictum mi ut feugiat. Donec aliquet lacus eget ipsum pharetra nec mollis justo pretium. Etiam quis velit id odio vulputate rutrum. Nulla at justo felis, in pellentesque erat.</p>
-          <a href="cv/">
-            Take a look at my CV
-          </a>
-          
+      <!-- / contact-page -->
+      <article class="page" id="contact">
+        <div class="page-content contact-content">
+          <h1>Find <span>Me</span></h1>
+          <span class="break"></span>
+          <a href="cv" class="cv">View my cv</a>
+          <div class="contact_links">
+            <a>Twitter</a>
+             <span>/</span> 
+            <a>LinkdIn</a>
+             <span>/ </span>
+            <a>Github</a>
+          </div>
+          <p class="contact_email">Contact me by <a>Email</a></p>
+          <span class="break"></span>
+          <p class="credits">This website is made using my own modified version of the <a href="http://joelb.me/scrollpath/">Scroll Path Plugin</a> by Joel Besada <br />The images are made using brushes from <a href="http://www.bittbox.com">bittbox</a></p>
+          <p class="copyright">© Copyright 2013</p>
         </div>
-        <ul class="skills">
-          <li class="skill pm">
-            <img src="img/pm.png" alt="project management" />
-            <p>Knowledge of project management methodologies such as Agile and ITIL. Experience of managing a team to deliver projects. Industry experience and training in Scrum.</p>
-          </li>
-          <li class="skill des">
-            <img src="img/des.png" alt="design" />
-            <p>Proficiant in Photoshop, Illustrator, HTML5, &amp; CSS3. Working knowledge of libraries/resources including LESS, SASS &amp; HTML Boilerplate. A passion for clean usable design.</p>
-          </li>
-          <li class="skill dev">
-            <img src="img/dev.png" alt="development" />
-            <p>Experience developing with PHP, Ruby, Java, MySQL and Javascript. Working knowledge of frameworks such as Rails, Spring, Backbone, JQuery &amp; Wordpress.</p>
-          </li>
-          
-        </ul>
-      </div>
-    </div> 
-
-    <div class="page line2">
+      </article>
+      <!-- ______________________________________________________________________ -->
     </div>
 
-    <div class="page portfolio">
-      <div class="shelf">
-        <div class="compiling">
-        </div>
-        <!-- <ul class="port-items">
-          
-        </ul> -->
-        <div class="shelf-left"></div>
-        <div class="shelf-middle"></div>
-        <div class="shelf-right"></div>
-      </div>
-    </div>
+    <!-- JavaScript at the bottom for fast page loading -->
 
-    <div class="page line3">
-    </div>
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+            <!-- // <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script> -->
+    <!-- scripts concatenated and minified via build script -->
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <!-- end scripts -->
 
-    <div class="page contact">
-      <h2>Contact</h2>
-      <div class="lnks-row">
-        <a href='mailto:test@local.com'><div class="mail"></div></a>
-      </div>
-      <div class="lnks-row">
-        <a href="#"><div class="twitter"></div></a>
-        <a href="#"><div class="linkedin"></div></a>
-      </div>
-    </div>
-
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
   </div>
-
-  <!-- JavaScript at the bottom for fast page loading -->
-
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
-  <!-- scripts concatenated and minified via build script -->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-  <!-- end scripts -->
-
-  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-       mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-</body>
+  </body>
 </html>

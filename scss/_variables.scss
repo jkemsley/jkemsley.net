@@ -12,7 +12,8 @@ $white 			: rgb(255,255,255);
 // 1. ROOT 					==============================
 
 $bodycolor : #fefefe;
-$textcolor : #6f6f6f;
+$textcolor : $darkgrey;
+$sitewidth : 960px;
 
 // 2. TYPOGRAPHY 			==============================
 
@@ -24,7 +25,7 @@ $baseheadingfontweight : 300;
 $baseheadingfontcolor : inherit;
 $baseheadingfontcolorhighlight : #A47578;
 
-$altfont :'Droid Serif', serif;
+$altfont : 'Libre Baskerville', serif;
 $altlineheight : 1.35em;
 
 $codefont : Monaco, Courier New, monospace;

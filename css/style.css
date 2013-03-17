@@ -72,7 +72,7 @@ body {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5em;
-  color: #6f6f6f;
+  color: #404040;
 }
 
 /* line 49, ../scss/_site.scss */
@@ -82,9 +82,10 @@ body {
   overflow: hidden;
   border: 15px solid gainsboro;
   background: #fefefe url('../img/bg-light.png?1360706080');
+  z-index: -100;
 }
 
-/* line 57, ../scss/_site.scss */
+/* line 58, ../scss/_site.scss */
 nav {
   position: fixed;
   top: 0;
@@ -100,36 +101,91 @@ nav {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 72, ../scss/_site.scss */
-nav ul {
-  display: block;
-  list-style: none;
-  padding: 0px;
-  margin-top: 18px;
-  text-align: right;
+
+/* line 74, ../scss/_site.scss */
+.nav-wrap {
+  width: 960px;
+  margin: 0 auto;
 }
-/* line 80, ../scss/_site.scss */
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-/* line 84, ../scss/_site.scss */
-nav ul li a, nav ul li a:visited {
+/* line 78, ../scss/_site.scss */
+.nav-wrap a, .nav-wrap a:visited {
   font-size: 18px;
   font-size: 1.8rem;
-  font-family: "Droid Serif", serif;
+  font-family: "Libre Baskerville", serif;
   text-transform: lowercase;
-  color: #6f6f6f;
+  color: #404040;
+}
+/* line 85, ../scss/_site.scss */
+.nav-wrap .home-nav {
+  float: left;
+  display: block;
+  padding: 18px 0px;
+  margin: 0px;
 }
 /* line 91, ../scss/_site.scss */
-nav ul li a:hover, nav ul li a:visited:hover {
+.nav-wrap .home-nav li {
+  display: inline-block;
+}
+/* line 94, ../scss/_site.scss */
+.nav-wrap .home-nav li a {
+  padding: 18px 10px;
+}
+/* line 97, ../scss/_site.scss */
+.nav-wrap .home-nav li a span {
+  color: #a47578;
+}
+/* line 101, ../scss/_site.scss */
+.nav-wrap .home-nav li a:hover {
   text-decoration: none;
+  border-bottom: 2px solid #a47578;
+  background-color: rgba(230, 230, 230, 0.5);
+}
+/* line 110, ../scss/_site.scss */
+.nav-wrap .home-nav .site-logo a {
+  padding: 18px 25px 40px 25px;
+  border-bottom: 4px solid #7b5154;
+  background: #a47578 url('../img/logo.png?1363082943') no-repeat center center;
+}
+/* line 114, ../scss/_site.scss */
+.nav-wrap .home-nav .site-logo a:hover {
+  border-bottom: 4px solid #7b5154;
+  background-color: #7b5154;
+}
+/* line 123, ../scss/_site.scss */
+.nav-wrap .nav {
+  float: right;
+  display: block;
+  list-style: none;
+  padding: 18px 0 18px 45px;
+  margin: 0px;
+  text-align: right;
+  background: url('../img/swirl.png?1363003629') no-repeat left 25px;
+}
+/* line 132, ../scss/_site.scss */
+.nav-wrap .nav li {
+  display: inline-block;
+}
+/* line 136, ../scss/_site.scss */
+.nav-wrap .nav li a, .nav-wrap .nav li a:visited {
+  padding: 18px 10px 18px 10px;
+  text-align: center;
+}
+/* line 141, ../scss/_site.scss */
+.nav-wrap .nav li a:hover, .nav-wrap .nav li a:visited:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #a47578;
+  background-color: rgba(230, 230, 230, 0.5);
 }
 
-/* line 99, ../scss/_site.scss */
-.page, #home, #about, #portfolio, #contact {
+/* line 151, ../scss/_site.scss */
+.page, #home, #about, #portfolio, #tablet, #contact {
   position: absolute;
   width: 960px;
+}
+
+/* line 156, ../scss/_site.scss */
+.hide {
+  display: none;
 }
 
 /* Typography =================================================== */
@@ -269,7 +325,7 @@ blockquote {
   margin: 0 0 1.5em -24px;
   padding-left: 24px;
   border-left: 2px solid #c7ced6;
-  font-family: "Droid Serif", serif;
+  font-family: "Libre Baskerville", serif;
   font-style: normal;
 }
 
@@ -334,14 +390,14 @@ dfn {
 /* line 154, ../scss/_typography.scss */
 ins {
   background-color: #f3f5f6;
-  color: #6f6f6f;
+  color: #404040;
   text-decoration: none;
 }
 
 /* line 159, ../scss/_typography.scss */
 mark {
   background-color: #f3f5f6;
-  color: #6f6f6f;
+  color: #404040;
   font-style: italic;
   font-weight: bold;
 }
@@ -651,53 +707,76 @@ figure figcaption {
 /* line 12, ../scss/_page.scss */
 .home-content {
   width: 505px;
-  margin: 353px 0px 0px 913px;
+  margin: 250px 0px 0px 913px;
 }
 
 /* line 17, ../scss/_page.scss */
 .home-header {
   text-align: right;
+  margin-bottom: 50px;
 }
-/* line 20, ../scss/_page.scss */
+/* line 21, ../scss/_page.scss */
 .home-header h1 {
   padding-bottom: 20px;
-  margin-bottom: 10px;
-  font-family: "Droid Serif", serif;
-  font-size: 72px;
-  font-size: 7.2rem;
+  margin-bottom: 2px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 65px;
+  font-size: 6.5rem;
   border-bottom: 1px solid #c1c1c1;
 }
-/* line 27, ../scss/_page.scss */
+/* line 28, ../scss/_page.scss */
 .home-header h1 span {
   color: #a47578;
 }
-/* line 32, ../scss/_page.scss */
+/* line 33, ../scss/_page.scss */
 .home-header .tag {
   display: block;
   height: 130px;
-  padding-right: 120px;
+  padding: 10px 0px 0 0;
   font-size: 72px;
   font-size: 7.2rem;
   font-weight: 300;
   text-align: right;
   line-height: 53px;
-  color: #454545;
-  background: url('../img/amp.png?1360871361') no-repeat right 30px;
+  border-top: 1px solid #c1c1c1;
 }
-/* line 44, ../scss/_page.scss */
+/* line 45, ../scss/_page.scss */
+.home-header .tag .amp {
+  float: right;
+  padding: 25px 0px 0px 10px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 120px;
+  font-size: 12rem;
+  line-height: 100px;
+  color: #a47578;
+}
+/* line 54, ../scss/_page.scss */
 .home-header .tag span {
   padding: 0px 1px 0px 35px;
   background: url('../img/d.png?1360515333') no-repeat 0px 52px;
 }
 
-/* line 51, ../scss/_page.scss */
-.home-footer {
-  margin-top: 100px;
+/* line 61, ../scss/_page.scss */
+.teaser {
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 40px;
 }
-/* line 53, ../scss/_page.scss */
+/* line 67, ../scss/_page.scss */
+.teaser span {
+  color: #9a6669;
+}
+
+/* line 72, ../scss/_page.scss */
+.home-footer {
+  margin-top: 40px;
+}
+/* line 74, ../scss/_page.scss */
 .home-footer .or {
   padding: 45px 0 30px 0;
-  font-family: "Droid Serif", serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 20px;
   font-size: 2rem;
   font-weight: bold;
@@ -707,12 +786,12 @@ figure figcaption {
   color: #a9a9a9;
   background: url('../img/or.png?1358190226') no-repeat center 62px;
 }
-/* line 65, ../scss/_page.scss */
+/* line 86, ../scss/_page.scss */
 .home-footer .scroll {
   padding: 0 0 105px 0;
   font-size: 30px;
   font-size: 3rem;
-  font-family: "Droid Serif", serif;
+  font-family: "Libre Baskerville", serif;
   text-align: center;
   text-shadow: 1px 1px 0px white;
   color: #a47578;
@@ -720,7 +799,7 @@ figure figcaption {
 }
 
 /* ABOUT =================================================== */
-/* line 78, ../scss/_page.scss */
+/* line 99, ../scss/_page.scss */
 #about {
   top: 1200px;
   left: 540px;
@@ -729,43 +808,73 @@ figure figcaption {
   background: url('../img/about.png?1358190226') no-repeat 0 0;
 }
 
-/* line 87, ../scss/_page.scss */
+/* line 108, ../scss/_page.scss */
 .about-content {
   clear: both;
-  width: 1200px;
+  width: 960px;
   height: 330px;
   padding-top: 440px;
   margin: 0 auto;
 }
-/* line 94, ../scss/_page.scss */
+/* line 115, ../scss/_page.scss */
 .about-content .blurb {
   float: left;
-  width: 40%;
+  width: 75%;
 }
-/* line 99, ../scss/_page.scss */
-.about-content .skills {
+/* line 120, ../scss/_page.scss */
+.about-content .myskills {
   float: right;
-  width: 55%;
+  width: 20%;
 }
 
-/* line 106, ../scss/_page.scss */
+/* line 127, ../scss/_page.scss */
 .blurb h1 {
-  margin-bottom: 10px;
-  font-size: 72px;
-  font-size: 7.2rem;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-size: 5rem;
+  line-height: 30px;
 }
-/* line 111, ../scss/_page.scss */
+/* line 133, ../scss/_page.scss */
 .blurb h1 span {
   color: #a47578;
 }
-/* line 116, ../scss/_page.scss */
+/* line 138, ../scss/_page.scss */
 .blurb p {
-  font-family: "Droid Serif", serif;
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-family: "Libre Baskerville", serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 30px;
 }
 
-/* line 122, ../scss/_page.scss */
+/* line 146, ../scss/_page.scss */
+.myskills h1 {
+  margin-bottom: 30px;
+  text-align: right;
+  font-size: 50px;
+  font-size: 5rem;
+  line-height: 30px;
+}
+/* line 153, ../scss/_page.scss */
+.myskills ul {
+  padding: 0px 10px 0px 0px;
+  margin: 10px;
+  color: #a47578;
+}
+/* line 158, ../scss/_page.scss */
+.myskills ul li {
+  font-family: "Libre Baskerville", serif;
+  text-align: right;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 30px;
+  list-style: square;
+}
+/* line 165, ../scss/_page.scss */
+.myskills ul li span {
+  color: #404040;
+}
+
+/* line 172, ../scss/_page.scss */
 .skills {
   overflow: hidden;
   height: 175px;
@@ -776,7 +885,7 @@ figure figcaption {
   -moz-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.04);
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.04);
 }
-/* line 130, ../scss/_page.scss */
+/* line 180, ../scss/_page.scss */
 .skills .skill {
   position: relative;
   float: right;
@@ -786,7 +895,7 @@ figure figcaption {
   list-style: none;
   border-right: 2px dashed #c7c7c7;
 }
-/* line 139, ../scss/_page.scss */
+/* line 189, ../scss/_page.scss */
 .skills .skill .skill_wrap {
   position: absolute;
   top: 0px;
@@ -795,19 +904,19 @@ figure figcaption {
   -o-transition: top 0.2s;
   transition: top 0.2s;
 }
-/* line 144, ../scss/_page.scss */
+/* line 194, ../scss/_page.scss */
 .skills .skill .skill_wrap:hover {
   top: -140px;
 }
-/* line 147, ../scss/_page.scss */
+/* line 197, ../scss/_page.scss */
 .skills .skill .skill_wrap:hover h2 {
   margin-bottom: 5px;
 }
-/* line 151, ../scss/_page.scss */
+/* line 201, ../scss/_page.scss */
 .skills .skill .skill_wrap:hover img {
   margin-bottom: 20px;
 }
-/* line 157, ../scss/_page.scss */
+/* line 207, ../scss/_page.scss */
 .skills .skill img {
   display: block;
   margin: 0 auto;
@@ -816,12 +925,12 @@ figure figcaption {
   -o-transition: margin-bottom 0.2s;
   transition: margin-bottom 0.2s;
 }
-/* line 163, ../scss/_page.scss */
+/* line 213, ../scss/_page.scss */
 .skills .skill h2 {
   height: 50px;
   margin: 15px 0 30px 0;
   text-align: center;
-  font-family: "Droid Serif", serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 22px;
   font-size: 2.2rem;
   color: #a47578;
@@ -830,26 +939,26 @@ figure figcaption {
   -o-transition: margin-bottom 0.2s;
   transition: margin-bottom 0.2s;
 }
-/* line 173, ../scss/_page.scss */
+/* line 223, ../scss/_page.scss */
 .skills .skill p {
   width: 180px;
   margin: 0px;
   font-size: 12px;
   font-size: 1.2rem;
-  font-family: "Droid Serif", serif;
+  font-family: "Libre Baskerville", serif;
   text-align: center;
 }
-/* line 182, ../scss/_page.scss */
+/* line 232, ../scss/_page.scss */
 .skills .pm {
   border: 0px;
 }
-/* line 185, ../scss/_page.scss */
+/* line 235, ../scss/_page.scss */
 .skills .pm h2 {
   margin-right: 20px;
 }
 
 /* PORT =================================================== */
-/* line 193, ../scss/_page.scss */
+/* line 243, ../scss/_page.scss */
 #portfolio {
   top: 630px;
   left: 2110px;
@@ -857,14 +966,14 @@ figure figcaption {
   height: 800px;
 }
 
-/* line 201, ../scss/_page.scss */
+/* line 251, ../scss/_page.scss */
 .portfolio-content {
   position: relative;
   margin: 0 auto;
   font-size: 0;
   text-align: center;
 }
-/* line 207, ../scss/_page.scss */
+/* line 257, ../scss/_page.scss */
 .portfolio-content .compiling {
   position: absolute;
   top: 0px;
@@ -873,7 +982,54 @@ figure figcaption {
   height: 400px;
   background: url('../img/sign.png?1358190226') no-repeat 0 0;
 }
-/* line 216, ../scss/_page.scss */
+/* line 266, ../scss/_page.scss */
+.portfolio-content .port-items {
+  position: absolute;
+  top: 93px;
+  left: 373px;
+  width: 798px;
+  height: 499px;
+  padding-left: 0px;
+  list-style: none;
+}
+/* line 275, ../scss/_page.scss */
+.portfolio-content .port-items li {
+  position: relative;
+  float: left;
+  width: 160px;
+  height: 160px;
+  margin: 0 35px 35px 0;
+}
+/* line 284, ../scss/_page.scss */
+.portfolio-content .port-items .port-item {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin: 6px 0px 0px 6px;
+  -webkit-box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.75);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+/* line 295, ../scss/_page.scss */
+.portfolio-content .port-items .port-item:hover {
+  outline: 4px solid #404040;
+}
+/* line 299, ../scss/_page.scss */
+.portfolio-content .port-items .port-item:active {
+  border: 4px solid #a47578;
+  background-position: -4px -4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 309, ../scss/_page.scss */
+.portfolio-content .port-items #radical {
+  background-image: url('../img/radical_thumb.jpg?1363257182');
+}
+/* line 314, ../scss/_page.scss */
 .portfolio-content .shelf-left {
   display: inline-block;
   width: 432px;
@@ -881,7 +1037,7 @@ figure figcaption {
   z-index: -2;
   background: url('../img/shelf-left.png?1358190226') no-repeat 0 0;
 }
-/* line 224, ../scss/_page.scss */
+/* line 322, ../scss/_page.scss */
 .portfolio-content .shelf-middle {
   display: inline-block;
   width: 398px;
@@ -889,7 +1045,7 @@ figure figcaption {
   z-index: -2;
   background: url('../img/shelf-middle.png?1358190226') repeat-x 0 -10px;
 }
-/* line 232, ../scss/_page.scss */
+/* line 330, ../scss/_page.scss */
 .portfolio-content .shelf-right {
   display: inline-block;
   width: 395px;
@@ -898,16 +1054,473 @@ figure figcaption {
   background: url('../img/shelf-right.png?1358190226') no-repeat 0 0;
 }
 
+/* PORT-ITEM ================================================= */
+/* line 341, ../scss/_page.scss */
+#tablet {
+  top: 2130px;
+  left: 1895px;
+  width: 1865px;
+  height: 1024px;
+}
+
+/* line 351, ../scss/_page.scss */
+.tablet-content {
+  position: relative;
+  overflow: auto;
+  width: 1865px;
+  height: 1024px;
+}
+
+/* line 358, ../scss/_page.scss */
+.tablet-bg {
+  position: absolute;
+  top: -10px;
+  pointer-events: none;
+  width: 1865px;
+  height: 1024px;
+  background: url('../img/tablet.png?1363263363') no-repeat 0 0;
+}
+
+/* line 368, ../scss/_page.scss */
+.tab-content-wrap {
+  position: relative;
+  width: 860px;
+  height: 650px;
+  overflow: hidden;
+  margin: 150px 0px 0px 510px;
+}
+
+/* line 377, ../scss/_page.scss */
+.tab-controls {
+  height: 50px;
+  padding-bottom: 5px;
+  margin: 25px 50px 10px 50px;
+  border-bottom: 1px solid #c1c1c1;
+}
+/* line 384, ../scss/_page.scss */
+.tab-controls .tab-back {
+  position: relative;
+  float: left;
+  padding: 10px 15px 10px 5px;
+  margin-left: 25px;
+  background: #e6e6e6;
+}
+/* line 391, ../scss/_page.scss */
+.tab-controls .tab-back .back-arrow {
+  position: absolute;
+  top: 0px;
+  left: -43px;
+  width: 0px;
+  height: 0px;
+  border-color: transparent transparent #e6e6e6 transparent;
+  border-width: 22px;
+  border-style: solid;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+/* line 403, ../scss/_page.scss */
+.tab-controls .tab-back:hover {
+  text-decoration: none;
+  color: white;
+  background: #a47578;
+}
+/* line 408, ../scss/_page.scss */
+.tab-controls .tab-back:hover .back-arrow {
+  border-color: transparent transparent #a47578 transparent;
+}
+/* line 413, ../scss/_page.scss */
+.tab-controls .tab-back:active {
+  text-decoration: none;
+  color: white;
+  background: #8b5b5e;
+}
+/* line 418, ../scss/_page.scss */
+.tab-controls .tab-back:active .back-arrow {
+  border-color: transparent transparent #8b5b5e transparent;
+}
+/* line 424, ../scss/_page.scss */
+.tab-controls .tab-prev-next {
+  float: right;
+  margin: 12px 25px 12px 0px;
+}
+/* line 428, ../scss/_page.scss */
+.tab-controls .tab-prev-next li {
+  display: inline-block;
+}
+/* line 432, ../scss/_page.scss */
+.tab-controls .tab-prev-next .tab-prev {
+  position: relative;
+  padding: 10px 15px 10px 5px;
+  background: #e6e6e6;
+}
+/* line 437, ../scss/_page.scss */
+.tab-controls .tab-prev-next .tab-prev .back-arrow {
+  position: absolute;
+  top: 0px;
+  left: -43px;
+  width: 0px;
+  height: 0px;
+  border-color: transparent transparent #e6e6e6 transparent;
+  border-width: 22px;
+  border-style: solid;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+/* line 449, ../scss/_page.scss */
+.tab-controls .tab-prev-next .tab-prev:hover {
+  text-decoration: none;
+  color: white;
+  background: #a47578;
+}
+/* line 454, ../scss/_page.scss */
+.tab-controls .tab-prev-next .tab-prev:hover .back-arrow {
+  border-color: transparent transparent #a47578 transparent;
+}
+/* line 459, ../scss/_page.scss */
+.tab-controls .tab-prev-next .tab-prev:active {
+  text-decoration: none;
+  color: white;
+  background: #8b5b5e;
+}
+/* line 464, ../scss/_page.scss */
+.tab-controls .tab-prev-next .tab-prev:active .back-arrow {
+  border-color: transparent transparent #8b5b5e transparent;
+}
+/* line 470, ../scss/_page.scss */
+.tab-controls .tab-prev-next .tab-next {
+  position: relative;
+  padding: 10px 5px 10px 15px;
+  background: #e6e6e6;
+}
+/* line 475, ../scss/_page.scss */
+.tab-controls .tab-prev-next .tab-next .for-arrow {
+  position: absolute;
+  top: 0px;
+  right: -43px;
+  width: 0px;
+  height: 0px;
+  border-color: transparent transparent #e6e6e6 transparent;
+  border-width: 22px;
+  border-style: solid;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+/* line 487, ../scss/_page.scss */
+.tab-controls .tab-prev-next .tab-next:hover {
+  text-decoration: none;
+  color: white;
+  background: #a47578;
+}
+/* line 492, ../scss/_page.scss */
+.tab-controls .tab-prev-next .tab-next:hover .for-arrow {
+  border-color: transparent transparent #a47578 transparent;
+}
+/* line 497, ../scss/_page.scss */
+.tab-controls .tab-prev-next .tab-next:active {
+  text-decoration: none;
+  color: white;
+  background: #8b5b5e;
+}
+/* line 502, ../scss/_page.scss */
+.tab-controls .tab-prev-next .tab-next:active .for-arrow {
+  border-color: transparent transparent #8b5b5e transparent;
+}
+/* line 509, ../scss/_page.scss */
+.tab-controls a {
+  cursor: pointer;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  font-size: 2rem;
+  color: #8b5b5e;
+}
+
+/* line 517, ../scss/_page.scss */
+.tab-items {
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  height: 560px;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 200px;
+  list-style: none;
+}
+/* line 527, ../scss/_page.scss */
+.tab-items .tab-item {
+  float: left;
+  width: 755px;
+  height: 500px;
+  padding: 10px 50px 50px 50px;
+}
+
+/* line 537, ../scss/_page.scss */
+.tab-item h1 {
+  margin-bottom: 10px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 40px;
+  font-size: 4rem;
+}
+/* line 543, ../scss/_page.scss */
+.tab-item .tab-right {
+  float: right;
+  width: 377px;
+  margin: 0px 0px 10px 10px;
+}
+
+/* line 550, ../scss/_page.scss */
+.tab-image {
+  margin: 10px 0px 35px 10px;
+  border: 1px solid gray;
+}
+/* line 554, ../scss/_page.scss */
+.tab-image .tab-browser {
+  overflow: auto;
+  padding: 0px 0px 0px 7px;
+  list-style: none;
+  border-bottom: 1px solid gray;
+}
+/* line 560, ../scss/_page.scss */
+.tab-image .tab-browser li {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid gray;
+}
+/* line 567, ../scss/_page.scss */
+.tab-image .tab-browser .tab-browser-btn {
+  margin-top: 13px;
+  background-color: #e1d1d2;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 573, ../scss/_page.scss */
+.tab-image .tab-browser .tab-browser-adrs {
+  float: right;
+  width: 70%;
+  padding: 7px;
+  margin: 5px;
+  background-color: #e1d1d2;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 584, ../scss/_page.scss */
+.tab-url {
+  width: 81px;
+  display: block;
+  padding: 7px 10px 8px 10px;
+  margin: 10px auto;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 34px;
+  text-transform: uppercase;
+  border: 1px dashed #bfbfbf;
+  color: #404040;
+  -webkit-box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.1);
+  box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.1);
+}
+/* line 596, ../scss/_page.scss */
+.tab-url:hover {
+  text-decoration: none;
+  background-color: #d9d9d9;
+}
+/* line 601, ../scss/_page.scss */
+.tab-url:active {
+  background-color: #bfbfbf;
+}
+
+/* line 606, ../scss/_page.scss */
+.tab-tags {
+  list-style: none;
+  padding: 0px 10px 0 0;
+  margin-bottom: 10px;
+}
+/* line 611, ../scss/_page.scss */
+.tab-tags li {
+  display: inline-block;
+  padding: 5px 5px 10px 5px;
+  margin: 0 5px 10px 0;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: "Libre Baskerville", serif;
+  line-height: 18px;
+  background: #d9d9d9;
+}
+
+/* line 624, ../scss/_page.scss */
+.tab-info p {
+  margin-bottom: 10px;
+  font-family: "Libre Baskerville", serif;
+  line-height: 30px;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
 /* CONTACT =================================================== */
-/* line 243, ../scss/_page.scss */
+/* line 634, ../scss/_page.scss */
 #contact {
   top: 1300px;
-  left: 3250px;
-  width: 750px;
+  left: 3100px;
+  width: 960px;
   height: 800px;
-  padding-top: 100px;
-  font-weight: 300;
-  font-family: 'Josefin Sans', sans-serif;
-  color: #454545;
+  padding-top: 150px;
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+  color: white;
   background: url('../img/postbox.png?1358190226') no-repeat right 0;
+}
+
+/* line 647, ../scss/_page.scss */
+.contact-content {
+  width: 570px;
+  height: 430px;
+  padding: 40px;
+  background-color: #bfbfbf;
+  border: 2px dashed gray;
+}
+/* line 654, ../scss/_page.scss */
+.contact-content h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-size: 5rem;
+  line-height: 50px;
+}
+/* line 659, ../scss/_page.scss */
+.contact-content h1 span {
+  color: #a47578;
+}
+/* line 664, ../scss/_page.scss */
+.contact-content .break {
+  display: block;
+  width: 400px;
+  height: 1px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-color: white transparent white transparent;
+  border-width: 1px;
+  border-style: solid;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+/* line 676, ../scss/_page.scss */
+.contact-content .cv {
+  display: block;
+  width: 120px;
+  margin: 30px auto;
+  padding: 10px 15px;
+  border: 1px dashed #bfbfbf;
+  text-transform: uppercase;
+  color: #a47578;
+  background-color: #e6e6e6;
+  cursor: pointer;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  -webkit-transition-delay: 0;
+  -moz-transition: background-color 0.1s ease-in-out 0;
+  -o-transition: background-color 0.1s ease-in-out 0;
+  transition: background-color 0.1s ease-in-out 0;
+}
+/* line 688, ../scss/_page.scss */
+.contact-content .cv:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #a47578;
+}
+/* line 695, ../scss/_page.scss */
+.contact-content .contact_links {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 30px;
+}
+/* line 700, ../scss/_page.scss */
+.contact-content .contact_links a {
+  vertical-align: middle;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 20px;
+  cursor: pointer;
+  color: #8b5b5e;
+  -webkit-transition: color 0.2s ease-in-out;
+  -webkit-transition-delay: 0;
+  -moz-transition: color 0.2s ease-in-out 0;
+  -o-transition: color 0.2s ease-in-out 0;
+  transition: color 0.2s ease-in-out 0;
+}
+/* line 708, ../scss/_page.scss */
+.contact-content .contact_links a:hover {
+  text-decoration: none;
+  color: white;
+}
+/* line 714, ../scss/_page.scss */
+.contact-content .contact_links span {
+  vertical-align: middle;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+/* line 720, ../scss/_page.scss */
+.contact-content .contact_email {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+/* line 725, ../scss/_page.scss */
+.contact-content .contact_email a {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #8b5b5e;
+  -webkit-transition: color 0.2s ease-in-out;
+  -webkit-transition-delay: 0;
+  -moz-transition: color 0.2s ease-in-out 0;
+  -o-transition: color 0.2s ease-in-out 0;
+  transition: color 0.2s ease-in-out 0;
+}
+/* line 731, ../scss/_page.scss */
+.contact-content .contact_email a:hover {
+  text-decoration: none;
+  color: white;
+}
+/* line 738, ../scss/_page.scss */
+.contact-content .credits {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+/* line 743, ../scss/_page.scss */
+.contact-content .credits a {
+  cursor: pointer;
+  color: #8b5b5e;
+  -webkit-transition: color 0.2s ease-in-out;
+  -webkit-transition-delay: 0;
+  -moz-transition: color 0.2s ease-in-out 0;
+  -o-transition: color 0.2s ease-in-out 0;
+  transition: color 0.2s ease-in-out 0;
+}
+/* line 748, ../scss/_page.scss */
+.contact-content .credits a:hover {
+  text-decoration: none;
+  color: white;
+}
+/* line 755, ../scss/_page.scss */
+.contact-content .copyright {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 20px;
 }

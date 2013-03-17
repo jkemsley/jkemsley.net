@@ -52,6 +52,7 @@ body {
 	overflow: hidden;
 	border: $bodyborderwidth $bodyborderstyle $bodybordercolor;
 	background : $bodycolor image-url('bg-light.png'); 
+	z-index: -100;
 }
 
 nav {
@@ -68,28 +69,79 @@ nav {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
 
-	ul {
+.nav-wrap {
+	width: $sitewidth;
+	margin: 0 auto;
+
+	a, a:visited {
+		@include font-size(18);
+		font-family: $altfont;
+		text-transform: lowercase;
+		color: $textcolor;
+	}
+
+	.home-nav {
+		float: left;
 		display: block;
-		list-style: none;
-		padding: 0px;
-		margin-top: 18px;
-
-		text-align: right;
+		padding: 18px 0px;
+		margin: 0px;
 
 		li {
 			display: inline-block;
-			margin-right: 20px;
 
-			a, a:visited {
-				@include font-size(18);
-				font-family: $altfont;
-				text-transform: lowercase;
-				color: $textcolor;
+			a {
+				padding: 18px 10px;
 
+				span {
+					color: $baseheadingfontcolorhighlight;
+				}
 
 				&:hover {
 					text-decoration: none;
+					border-bottom: 2px solid $baseheadingfontcolorhighlight;
+					background-color: rgba(230,230,230, 0.5);
+				}
+			}	
+		}
+
+		.site-logo {
+			a {
+				padding: 18px 25px 40px 25px;
+				border-bottom: 4px solid darken($baseheadingfontcolorhighlight, 15);
+				background: $baseheadingfontcolorhighlight image-url('logo.png') no-repeat center center;
+				&:hover {
+					border-bottom: 4px solid darken($baseheadingfontcolorhighlight, 15);
+					background-color: darken($baseheadingfontcolorhighlight, 15);
+				}
+			}
+		}
+		
+	}
+
+	.nav {
+		float: right;
+		display: block;
+		list-style: none;
+		padding: 18px 0 18px 45px;
+		margin: 0px;
+		text-align: right;
+		background: image-url('swirl.png') no-repeat left 25px;
+
+		li {
+			display: inline-block;
+			// margin-left: 20px;
+
+			a, a:visited {
+
+				padding: 18px 10px 18px 10px;
+				text-align: center;
+
+				&:hover {
+					text-decoration: none;
+					border-bottom: 2px solid $baseheadingfontcolorhighlight;
+					background-color: rgba(230,230,230, 0.5);
 				}
 			}
 		}	
@@ -99,6 +151,10 @@ nav {
 .page {
 	position: absolute;
 	width: 960px;
+}
+
+.hide {
+	display: none;
 }
 
 
