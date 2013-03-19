@@ -157,6 +157,32 @@ nav {
 	display: none;
 }
 
+.line1 {
+	position: absolute;
+	top: 967px;
+	left: -80px;
+	width: 712px;
+	height: 622px;
+	background: image-url('line1.png') no-repeat;
+}
+
+.line2 {
+	position: absolute;
+	top: 896px;
+	left: 1977px;
+	width: 288px;
+	height: 599px;
+	background: image-url('line2.png') no-repeat;
+}
+
+.line3 {
+	position: absolute;
+	top: 894px;
+	left: 3422px;
+	width: 532px;
+	height: 424px;
+	background: image-url('line3.png') no-repeat;
+}
 
 // 2. TYPOGRAPHY 			==============================
 // 3. COLOUR 				==============================

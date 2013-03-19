@@ -188,6 +188,36 @@ nav {
   display: none;
 }
 
+/* line 160, ../scss/_site.scss */
+.line1 {
+  position: absolute;
+  top: 967px;
+  left: -80px;
+  width: 712px;
+  height: 622px;
+  background: url('../img/line1.png?1363677194') no-repeat;
+}
+
+/* line 169, ../scss/_site.scss */
+.line2 {
+  position: absolute;
+  top: 896px;
+  left: 1977px;
+  width: 288px;
+  height: 599px;
+  background: url('../img/line2.png?1363730086') no-repeat;
+}
+
+/* line 178, ../scss/_site.scss */
+.line3 {
+  position: absolute;
+  top: 894px;
+  left: 3422px;
+  width: 532px;
+  height: 424px;
+  background: url('../img/line3.png?1363731105') no-repeat;
+}
+
 /* Typography =================================================== */
 /* line 5, ../scss/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
@@ -1063,7 +1093,7 @@ figure figcaption {
   height: 1024px;
 }
 
-/* line 351, ../scss/_page.scss */
+/* line 350, ../scss/_page.scss */
 .tablet-content {
   position: relative;
   overflow: auto;
@@ -1071,7 +1101,7 @@ figure figcaption {
   height: 1024px;
 }
 
-/* line 358, ../scss/_page.scss */
+/* line 357, ../scss/_page.scss */
 .tablet-bg {
   position: absolute;
   top: -10px;
@@ -1081,7 +1111,7 @@ figure figcaption {
   background: url('../img/tablet.png?1363263363') no-repeat 0 0;
 }
 
-/* line 368, ../scss/_page.scss */
+/* line 367, ../scss/_page.scss */
 .tab-content-wrap {
   position: relative;
   width: 860px;
@@ -1090,14 +1120,14 @@ figure figcaption {
   margin: 150px 0px 0px 510px;
 }
 
-/* line 377, ../scss/_page.scss */
+/* line 376, ../scss/_page.scss */
 .tab-controls {
   height: 50px;
   padding-bottom: 5px;
   margin: 25px 50px 10px 50px;
   border-bottom: 1px solid #c1c1c1;
 }
-/* line 384, ../scss/_page.scss */
+/* line 383, ../scss/_page.scss */
 .tab-controls .tab-back {
   position: relative;
   float: left;
@@ -1105,7 +1135,7 @@ figure figcaption {
   margin-left: 25px;
   background: #e6e6e6;
 }
-/* line 391, ../scss/_page.scss */
+/* line 390, ../scss/_page.scss */
 .tab-controls .tab-back .back-arrow {
   position: absolute;
   top: 0px;
@@ -1121,42 +1151,42 @@ figure figcaption {
   -o-transform: rotate(270deg);
   transform: rotate(270deg);
 }
-/* line 403, ../scss/_page.scss */
+/* line 402, ../scss/_page.scss */
 .tab-controls .tab-back:hover {
   text-decoration: none;
   color: white;
   background: #a47578;
 }
-/* line 408, ../scss/_page.scss */
+/* line 407, ../scss/_page.scss */
 .tab-controls .tab-back:hover .back-arrow {
   border-color: transparent transparent #a47578 transparent;
 }
-/* line 413, ../scss/_page.scss */
+/* line 412, ../scss/_page.scss */
 .tab-controls .tab-back:active {
   text-decoration: none;
   color: white;
   background: #8b5b5e;
 }
-/* line 418, ../scss/_page.scss */
+/* line 417, ../scss/_page.scss */
 .tab-controls .tab-back:active .back-arrow {
   border-color: transparent transparent #8b5b5e transparent;
 }
-/* line 424, ../scss/_page.scss */
+/* line 423, ../scss/_page.scss */
 .tab-controls .tab-prev-next {
   float: right;
   margin: 12px 25px 12px 0px;
 }
-/* line 428, ../scss/_page.scss */
+/* line 427, ../scss/_page.scss */
 .tab-controls .tab-prev-next li {
   display: inline-block;
 }
-/* line 432, ../scss/_page.scss */
+/* line 431, ../scss/_page.scss */
 .tab-controls .tab-prev-next .tab-prev {
   position: relative;
   padding: 10px 15px 10px 5px;
   background: #e6e6e6;
 }
-/* line 437, ../scss/_page.scss */
+/* line 436, ../scss/_page.scss */
 .tab-controls .tab-prev-next .tab-prev .back-arrow {
   position: absolute;
   top: 0px;
@@ -1172,33 +1202,33 @@ figure figcaption {
   -o-transform: rotate(270deg);
   transform: rotate(270deg);
 }
-/* line 449, ../scss/_page.scss */
+/* line 448, ../scss/_page.scss */
 .tab-controls .tab-prev-next .tab-prev:hover {
   text-decoration: none;
   color: white;
   background: #a47578;
 }
-/* line 454, ../scss/_page.scss */
+/* line 453, ../scss/_page.scss */
 .tab-controls .tab-prev-next .tab-prev:hover .back-arrow {
   border-color: transparent transparent #a47578 transparent;
 }
-/* line 459, ../scss/_page.scss */
+/* line 458, ../scss/_page.scss */
 .tab-controls .tab-prev-next .tab-prev:active {
   text-decoration: none;
   color: white;
   background: #8b5b5e;
 }
-/* line 464, ../scss/_page.scss */
+/* line 463, ../scss/_page.scss */
 .tab-controls .tab-prev-next .tab-prev:active .back-arrow {
   border-color: transparent transparent #8b5b5e transparent;
 }
-/* line 470, ../scss/_page.scss */
+/* line 469, ../scss/_page.scss */
 .tab-controls .tab-prev-next .tab-next {
   position: relative;
   padding: 10px 5px 10px 15px;
   background: #e6e6e6;
 }
-/* line 475, ../scss/_page.scss */
+/* line 474, ../scss/_page.scss */
 .tab-controls .tab-prev-next .tab-next .for-arrow {
   position: absolute;
   top: 0px;
@@ -1214,27 +1244,27 @@ figure figcaption {
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-/* line 487, ../scss/_page.scss */
+/* line 486, ../scss/_page.scss */
 .tab-controls .tab-prev-next .tab-next:hover {
   text-decoration: none;
   color: white;
   background: #a47578;
 }
-/* line 492, ../scss/_page.scss */
+/* line 491, ../scss/_page.scss */
 .tab-controls .tab-prev-next .tab-next:hover .for-arrow {
   border-color: transparent transparent #a47578 transparent;
 }
-/* line 497, ../scss/_page.scss */
+/* line 496, ../scss/_page.scss */
 .tab-controls .tab-prev-next .tab-next:active {
   text-decoration: none;
   color: white;
   background: #8b5b5e;
 }
-/* line 502, ../scss/_page.scss */
+/* line 501, ../scss/_page.scss */
 .tab-controls .tab-prev-next .tab-next:active .for-arrow {
   border-color: transparent transparent #8b5b5e transparent;
 }
-/* line 509, ../scss/_page.scss */
+/* line 508, ../scss/_page.scss */
 .tab-controls a {
   cursor: pointer;
   font-family: "Libre Baskerville", serif;
@@ -1243,7 +1273,7 @@ figure figcaption {
   color: #8b5b5e;
 }
 
-/* line 517, ../scss/_page.scss */
+/* line 516, ../scss/_page.scss */
 .tab-items {
   position: absolute;
   top: 90px;
@@ -1254,7 +1284,7 @@ figure figcaption {
   margin-right: 200px;
   list-style: none;
 }
-/* line 527, ../scss/_page.scss */
+/* line 526, ../scss/_page.scss */
 .tab-items .tab-item {
   float: left;
   width: 755px;
@@ -1262,40 +1292,40 @@ figure figcaption {
   padding: 10px 50px 50px 50px;
 }
 
-/* line 537, ../scss/_page.scss */
+/* line 536, ../scss/_page.scss */
 .tab-item h1 {
   margin-bottom: 10px;
   font-family: "Libre Baskerville", serif;
   font-size: 40px;
   font-size: 4rem;
 }
-/* line 543, ../scss/_page.scss */
+/* line 542, ../scss/_page.scss */
 .tab-item .tab-right {
   float: right;
   width: 377px;
   margin: 0px 0px 10px 10px;
 }
 
-/* line 550, ../scss/_page.scss */
+/* line 549, ../scss/_page.scss */
 .tab-image {
   margin: 10px 0px 35px 10px;
   border: 1px solid gray;
 }
-/* line 554, ../scss/_page.scss */
+/* line 553, ../scss/_page.scss */
 .tab-image .tab-browser {
   overflow: auto;
   padding: 0px 0px 0px 7px;
   list-style: none;
   border-bottom: 1px solid gray;
 }
-/* line 560, ../scss/_page.scss */
+/* line 559, ../scss/_page.scss */
 .tab-image .tab-browser li {
   display: inline-block;
   width: 8px;
   height: 8px;
   border: 1px solid gray;
 }
-/* line 567, ../scss/_page.scss */
+/* line 566, ../scss/_page.scss */
 .tab-image .tab-browser .tab-browser-btn {
   margin-top: 13px;
   background-color: #e1d1d2;
@@ -1305,7 +1335,7 @@ figure figcaption {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 573, ../scss/_page.scss */
+/* line 572, ../scss/_page.scss */
 .tab-image .tab-browser .tab-browser-adrs {
   float: right;
   width: 70%;
@@ -1319,7 +1349,7 @@ figure figcaption {
   border-radius: 5px;
 }
 
-/* line 584, ../scss/_page.scss */
+/* line 583, ../scss/_page.scss */
 .tab-url {
   width: 81px;
   display: block;
@@ -1335,23 +1365,23 @@ figure figcaption {
   -moz-box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.1);
   box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.1);
 }
-/* line 596, ../scss/_page.scss */
+/* line 595, ../scss/_page.scss */
 .tab-url:hover {
   text-decoration: none;
   background-color: #d9d9d9;
 }
-/* line 601, ../scss/_page.scss */
+/* line 600, ../scss/_page.scss */
 .tab-url:active {
   background-color: #bfbfbf;
 }
 
-/* line 606, ../scss/_page.scss */
+/* line 605, ../scss/_page.scss */
 .tab-tags {
   list-style: none;
   padding: 0px 10px 0 0;
   margin-bottom: 10px;
 }
-/* line 611, ../scss/_page.scss */
+/* line 610, ../scss/_page.scss */
 .tab-tags li {
   display: inline-block;
   padding: 5px 5px 10px 5px;
@@ -1363,7 +1393,7 @@ figure figcaption {
   background: #d9d9d9;
 }
 
-/* line 624, ../scss/_page.scss */
+/* line 623, ../scss/_page.scss */
 .tab-info p {
   margin-bottom: 10px;
   font-family: "Libre Baskerville", serif;
@@ -1373,7 +1403,7 @@ figure figcaption {
 }
 
 /* CONTACT =================================================== */
-/* line 634, ../scss/_page.scss */
+/* line 633, ../scss/_page.scss */
 #contact {
   top: 1300px;
   left: 3100px;
@@ -1386,7 +1416,7 @@ figure figcaption {
   background: url('../img/postbox.png?1358190226') no-repeat right 0;
 }
 
-/* line 647, ../scss/_page.scss */
+/* line 646, ../scss/_page.scss */
 .contact-content {
   width: 570px;
   height: 430px;
@@ -1394,18 +1424,18 @@ figure figcaption {
   background-color: #bfbfbf;
   border: 2px dashed gray;
 }
-/* line 654, ../scss/_page.scss */
+/* line 653, ../scss/_page.scss */
 .contact-content h1 {
   margin-bottom: 20px;
   font-size: 50px;
   font-size: 5rem;
   line-height: 50px;
 }
-/* line 659, ../scss/_page.scss */
+/* line 658, ../scss/_page.scss */
 .contact-content h1 span {
   color: #a47578;
 }
-/* line 664, ../scss/_page.scss */
+/* line 663, ../scss/_page.scss */
 .contact-content .break {
   display: block;
   width: 400px;
@@ -1418,7 +1448,7 @@ figure figcaption {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
-/* line 676, ../scss/_page.scss */
+/* line 675, ../scss/_page.scss */
 .contact-content .cv {
   display: block;
   width: 120px;
@@ -1435,20 +1465,20 @@ figure figcaption {
   -o-transition: background-color 0.1s ease-in-out 0;
   transition: background-color 0.1s ease-in-out 0;
 }
-/* line 688, ../scss/_page.scss */
+/* line 687, ../scss/_page.scss */
 .contact-content .cv:hover {
   text-decoration: none;
   color: white;
   background-color: #a47578;
 }
-/* line 695, ../scss/_page.scss */
+/* line 694, ../scss/_page.scss */
 .contact-content .contact_links {
   margin-bottom: 30px;
   font-size: 30px;
   font-size: 3rem;
   line-height: 30px;
 }
-/* line 700, ../scss/_page.scss */
+/* line 699, ../scss/_page.scss */
 .contact-content .contact_links a {
   vertical-align: middle;
   font-size: 18px;
@@ -1462,25 +1492,25 @@ figure figcaption {
   -o-transition: color 0.2s ease-in-out 0;
   transition: color 0.2s ease-in-out 0;
 }
-/* line 708, ../scss/_page.scss */
+/* line 707, ../scss/_page.scss */
 .contact-content .contact_links a:hover {
   text-decoration: none;
   color: white;
 }
-/* line 714, ../scss/_page.scss */
+/* line 713, ../scss/_page.scss */
 .contact-content .contact_links span {
   vertical-align: middle;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
-/* line 720, ../scss/_page.scss */
+/* line 719, ../scss/_page.scss */
 .contact-content .contact_email {
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 20px;
   margin-bottom: 30px;
 }
-/* line 725, ../scss/_page.scss */
+/* line 724, ../scss/_page.scss */
 .contact-content .contact_email a {
   text-transform: uppercase;
   cursor: pointer;
@@ -1491,19 +1521,19 @@ figure figcaption {
   -o-transition: color 0.2s ease-in-out 0;
   transition: color 0.2s ease-in-out 0;
 }
-/* line 731, ../scss/_page.scss */
+/* line 730, ../scss/_page.scss */
 .contact-content .contact_email a:hover {
   text-decoration: none;
   color: white;
 }
-/* line 738, ../scss/_page.scss */
+/* line 737, ../scss/_page.scss */
 .contact-content .credits {
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 25px;
   margin-bottom: 15px;
 }
-/* line 743, ../scss/_page.scss */
+/* line 742, ../scss/_page.scss */
 .contact-content .credits a {
   cursor: pointer;
   color: #8b5b5e;
@@ -1513,12 +1543,12 @@ figure figcaption {
   -o-transition: color 0.2s ease-in-out 0;
   transition: color 0.2s ease-in-out 0;
 }
-/* line 748, ../scss/_page.scss */
+/* line 747, ../scss/_page.scss */
 .contact-content .credits a:hover {
   text-decoration: none;
   color: white;
 }
-/* line 755, ../scss/_page.scss */
+/* line 754, ../scss/_page.scss */
 .contact-content .copyright {
   font-size: 14px;
   font-size: 1.4rem;
