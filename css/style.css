@@ -218,6 +218,16 @@ nav {
   background: url('../img/line3.png?1363731105') no-repeat;
 }
 
+/* line 187, ../scss/_site.scss */
+.line4 {
+  position: absolute;
+  top: 1080px;
+  left: 2640px;
+  width: 529px;
+  height: 1123px;
+  background: url('../img/line4.png?1363807653') no-repeat;
+}
+
 /* Typography =================================================== */
 /* line 5, ../scss/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
@@ -814,7 +824,7 @@ figure figcaption {
   text-align: center;
   text-shadow: 1px 1px 0px white;
   color: #a9a9a9;
-  background: url('../img/or.png?1358190226') no-repeat center 62px;
+  background: url('../img/or.png') no-repeat center 62px;
 }
 /* line 86, ../scss/_page.scss */
 .home-footer .scroll {

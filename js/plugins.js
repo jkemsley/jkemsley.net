@@ -295,7 +295,7 @@ jQuery.extend( jQuery.easing,
 
 		methods = {
 			/* Initializes the plugin */
-			init: function( options ) {
+			init: function( options) {
 
 				if ( this.length > 1 || isInitialized ) $.error( "jQuery.scrollPath can only be initialized on *one* element *once*" );
 				
