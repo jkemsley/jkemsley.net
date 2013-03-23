@@ -46,9 +46,9 @@
           <li><a href="#home">Jody <span>Kemsley</span></a></li>
         </ul>
         <ul class="nav">
-          <li class="about"><a href="#about">About</a></li>
-          <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
-          <li class="contact"><a href="#contact">Contact</a></li>
+          <li class="nav_about"><a href="#about">About</a></li>
+          <li class="nav_portfolio"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav_contact"><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -57,39 +57,38 @@
     <div class="site">
 
       <!-- / home-page -->
-      <article id="home">
-          <div class="page-content home-content">
-            <header class="page-header home-header">
-              <h1>Jody <span>Kemsley</span></h1>
-              <div class="tag">
-                <i class="amp">
-                  &amp;
-                </i>
-                web designer
-                <span>eveloper</span>
-              </div>
-            </header>
-            <h2 class="teaser">Currently based in the <span>UK</span>, I thrive on <span>creating</span> great <span>web solutions</span> coupled with an unwavering <span>thirst to learn</span>. <br />When I am not on my <span>puter</span>, you will usually find me on a Tennis Court or Football pitch trying to be all <span>Pro</span>.</h2>
-            <footer class="page-footer home-footer">
-              <!-- <p class="or">or</p> -->
-              <p class="scroll">scroll to see more</p>
-            </footer>
-          </div>
+      <article class="home">
+        <div class="page-content home-content">
+          <header class="page-header home-header">
+            <h1>Jody <span>Kemsley</span></h1>
+            <div class="tag">
+              <i class="amp">
+                &amp;
+              </i>
+              web designer
+              <span>eveloper</span>
+            </div>
+          </header>
+          <p class="teaser">Currently based in the <span>UK</span>, I thrive on <span>creating</span> great <span>web solutions</span> coupled with an unwavering <span>thirst to learn</span>. <br />When I am not on my <span>puter</span>, you will usually find me on a Tennis Court or Football pitch trying to be all <span>Pro</span>.</p>
+          <footer class="page-footer home-footer">
+            <p class="scroll">scroll to see more</p>
+          </footer>
+        </div>
       </article>
       <!-- ______________________________________________________________________ -->
 
       <div class="line1"></div>
 
       <!-- / about-page -->
-      <article id="about">
-        <div class="page-content about-content">
+      <article class="about">
+        <div class="page-content about-content clearfix">
           <div class="blurb">
-            <h1>More About Me</h1>
+            <h1 class="h1_alt">More About Me</h1>
             <p>As a Web Developer, I thrive on crafting solutions to development issues and finding ways to deliver outstanding user experience. Alongside Web Development, I am continuously building on my existing Design and Project Management skills.</p>
             <p>Away from the office, I enjoy the ‘great outdoors’. If I’m not walking or camping in the countryside, I can usually be found on the football pitch or playing tennis.</p>
           </div>
           <div class="myskills">
-            <h1>Skillset</h1>
+            <h1 class="h1_alt">Skillset</h1>
             <ul dir="rtl">
               <li><span>PHP</span></li>
               <li><span>Ruby</span></li>
@@ -109,7 +108,7 @@
       <div class="line2"></div>
 
       <!-- / portfolio-page -->
-      <article id="portfolio">
+      <article class="portfolio">
         <div class="page-content portfolio-content">
           <!-- <div class="compiling"></div> -->
           <ul class="port-items">
@@ -128,14 +127,14 @@
       <div class="line4"></div>
 
       <!-- / portfolio-item-page -->
-      <article id="tablet">
+      <article class="tablet">
         <div class="page-content tablet-content">
           <div class="tab-content-wrap">
             <div class="tab-controls">
-              <a class="tab-back"><div class="back-arrow"></div>Back</a>
+              <a class="bk_btn tab-back">Back</a>
               <ul class="tab-prev-next">
-                <li><a class="tab-prev"><div class="back-arrow"></div>prev</a></li>
-                <li><a class="tab-next"><div class="for-arrow"></div>next</a></li>
+                <li><a class="bk_btn tab-prev">prev</a></li>
+                <li><a class="nxt_btn tab-next">next</a></li>
               </ul>
             </div>
             <ul class="tab-items" id="tablet-items">
@@ -148,9 +147,9 @@
                         <li class="tab-browser-btn"></li>
                         <li class="tab-browser-adrs"></li>
                       </ul>
-                      <img src="img/radical.jpg">
+                      <img src="img/radical.jpg" />
                     </div>
-                    <a href="http://www.kent.ac.uk/english/radicaldistrust/index.html" class="tab-url">Visit site</a>
+                    <a href="http://www.kent.ac.uk/english/radicaldistrust/index.html" class="btn tab_url">Visit site</a>
                   </div>
                   <h1>Radical distrust</h1>
                   <ul class="tab-tags">
@@ -178,9 +177,9 @@
                         <li class="tab-browser-btn"></li>
                         <li class="tab-browser-adrs"></li>
                       </ul>
-                      <img src="img/radical.jpg">
+                      <img src="img/radical.jpg" />
                     </div>
-                    <a href="http://www.kent.ac.uk/english/radicaldistrust/index.html" class="tab-url">Visit site</a>
+                    <a href="http://www.kent.ac.uk/english/radicaldistrust/index.html" class="btn tab_url">Visit site</a>
                   </div>
                   <h1>Radical distrust</h1>
                   <ul class="tab-tags">
@@ -208,9 +207,9 @@
                         <li class="tab-browser-btn"></li>
                         <li class="tab-browser-adrs"></li>
                       </ul>
-                      <img src="img/radical.jpg">
+                      <img src="img/radical.jpg" />
                     </div>
-                    <a href="http://www.kent.ac.uk/english/radicaldistrust/index.html" class="tab-url">Visit site</a>
+                    <a href="http://www.kent.ac.uk/english/radicaldistrust/index.html" class="btn tab_url">Visit site</a>
                   </div>
                   <h1>Radical distrust</h1>
                   <ul class="tab-tags">
@@ -240,11 +239,11 @@
       <div class="line3"></div>
 
       <!-- / contact-page -->
-      <article class="page" id="contact">
+      <article class="contact">
         <div class="page-content contact-content">
           <h1>Find <span>Me</span></h1>
           <span class="break"></span>
-          <a href="cv" class="cv">View my cv</a>
+          <a href="cv" class="btn btn_drk cv">View my cv</a>
           <div class="contact_links">
             <a>Twitter</a>
              <span>/</span> 

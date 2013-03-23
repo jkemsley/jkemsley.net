@@ -21,8 +21,8 @@ function init() {
 	$(".site").scrollPath({wrapAround: false, scrollBar: false, drawPath: false});
 	$('#tablet-items').sliderjk({scrollSpeed: 500});	
 
-	if(window.location.search) {
-		var target = window.location.search.replace('?', '');
+	if(window.location.hash) {
+		var target = window.location.hash.replace('#', '');
 		$.fn.scrollPath('scrollTo', target, 0,'');
 	}
 
@@ -63,5 +63,7 @@ function init() {
 		e.preventDefault();
 		$.fn.sliderjk('scrollPrev', 500, 'easeOutBack');
 	});
+
+
 }
 

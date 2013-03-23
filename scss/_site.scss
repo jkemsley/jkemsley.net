@@ -37,9 +37,6 @@ html {
 body {
 	display: table-row;
 	height: 100%;
-	// margin : 0;
-	// padding : 0;
-	// background-color : transparent;
 	font-family : $basefont;
 	@include font-size();
 	line-height : $baselineheight;
@@ -51,7 +48,7 @@ body {
 	display: table-cell;
 	overflow: hidden;
 	border: $bodyborderwidth $bodyborderstyle $bodybordercolor;
-	background : $bodycolor image-url('bg-light.png'); 
+	background : $bodycolor image-url('bg-light.png');
 	z-index: -100;
 }
 
@@ -62,13 +59,10 @@ nav {
 	background-color: rgba(238, 238, 238, 0.9);
 	width: 100%;
 	z-index: 999;
-	border-top: $bodyborderwidth $bodyborderstyle $bodybordercolor;
-	border-left: $bodyborderwidth $bodyborderstyle $bodybordercolor;
-	border-right: $bodyborderwidth $bodyborderstyle $bodybordercolor;
-	border-bottom: 1px $bodyborderstyle $bodybordercolor;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+	border-style: $bodyborderstyle;
+	border-color: $bodybordercolor;
+	border-width: $bodyborderwidth $bodyborderwidth 1px $bodyborderwidth;
+	@include box-sizing(border-box);
 }
 
 .nav-wrap {
@@ -77,7 +71,6 @@ nav {
 
 	a, a:visited {
 		@include font-size(18);
-		font-family: $altfont;
 		text-transform: lowercase;
 		color: $textcolor;
 	}
@@ -95,12 +88,12 @@ nav {
 				padding: 18px 10px;
 
 				span {
-					color: $baseheadingfontcolorhighlight;
+					color: $alttextcolor;
 				}
 
 				&:hover {
 					text-decoration: none;
-					border-bottom: 2px solid $baseheadingfontcolorhighlight;
+					border-bottom: 2px solid $alttextcolor;
 					background-color: rgba(230,230,230, 0.5);
 				}
 			}	
@@ -109,15 +102,15 @@ nav {
 		.site-logo {
 			a {
 				padding: 18px 25px 40px 25px;
-				border-bottom: 4px solid darken($baseheadingfontcolorhighlight, 15);
-				background: $baseheadingfontcolorhighlight image-url('logo.png') no-repeat center center;
+				border-bottom: 4px solid darken($alttextcolor, 15);
+				background: $alttextcolor image-url('logo.png') no-repeat center center;
+				
 				&:hover {
-					border-bottom: 4px solid darken($baseheadingfontcolorhighlight, 15);
-					background-color: darken($baseheadingfontcolorhighlight, 15);
+					border-bottom: 4px solid darken($alttextcolor, 15);
+					background-color: darken($alttextcolor, 15);
 				}
 			}
 		}
-		
 	}
 
 	.nav {
@@ -131,7 +124,6 @@ nav {
 
 		li {
 			display: inline-block;
-			// margin-left: 20px;
 
 			a, a:visited {
 
@@ -140,7 +132,7 @@ nav {
 
 				&:hover {
 					text-decoration: none;
-					border-bottom: 2px solid $baseheadingfontcolorhighlight;
+					border-bottom: 2px solid $alttextcolor;
 					background-color: rgba(230,230,230, 0.5);
 				}
 			}
@@ -191,6 +183,17 @@ nav {
 	width: 529px;
 	height: 1123px;
 	background: image-url('line4.png') no-repeat;
+}
+
+.break {
+	display: block;
+	width: 400px;
+	height: 1px;
+	margin: 0 auto 30px auto;
+	border-color: $white transparent $white transparent;
+	border-width: 1px;
+	border-style: solid;
+	@include opacity(0.4);
 }
 
 // 2. TYPOGRAPHY 			==============================

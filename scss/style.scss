@@ -23,12 +23,7 @@
 // Colour interaction semantics
 @import "colour";
 
-// 4. TEXTURE 				==============================
-
-// Alerts, badges, boxes and gradients
-@import "texture";
-
-// 5. ELEMENTS 				==============================
+// 4. ELEMENTS 				==============================
 
 // Figures, images and other elements
 @import "elements";
@@ -36,12 +31,11 @@
 // Button styles (optional)
 @import "buttons";
 
-// 6. LAYOUT 			==============================
+// 5. LAYOUT 			==============================
 
 // Page level layout styles (banner, navigation, content, contentinfo)
 @import "page";
 
-//  7. VENDOR-SPECIFIC 		==============================
+//  6. VENDOR-SPECIFIC 		==============================
 
-
-//  8. MODERNIZR 			==============================
+//  7. MODERNIZR 			==============================

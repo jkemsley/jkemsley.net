@@ -1,6 +1,6 @@
 /* HOME =================================================== */
 
-#home {
+.home {
 	@extend .page;
 	top: 0px;
     left: -563px;
@@ -21,12 +21,11 @@
 	h1 {
 		padding-bottom: 20px;
 		margin-bottom: 2px;
-		font-family: $altfont;
 		@include font-size(65);
 		border-bottom: 1px solid #c1c1c1;
 
 		span {
-			color: $baseheadingfontcolorhighlight;
+			color: $alttextcolor;
 		}
 	}
 
@@ -36,19 +35,18 @@
 		padding: 10px 0px 0 0;
 		@include font-size(72);
 		font-weight: 300;
+		font-family: $altfont;
 		text-align: right;
 		line-height : 53px;
-		// color: #454545;
 		border-top: 1px solid #c1c1c1;
-		// background: image-url('amp.png') no-repeat right 35px;
 		
 		.amp {
 			float: right;
 			padding: 25px 0px 0px 10px;
-			font-family: $altfont;
+			font-family: $basefont;
 			@include font-size(120);
 			line-height: 100px;
-			color: $baseheadingfontcolorhighlight;
+			color: $alttextcolor;
 		}
 
 		span {
@@ -59,44 +57,25 @@
 }
 
 .teaser {
-	font-family: $altfont;
+	margin-bottom: 40px;
 	@include font-size(20);
 	text-align: center;
 	line-height: 40px;
-
-	span {
-		color: darken($baseheadingfontcolorhighlight, 5);
-	}
 }
 
 .home-footer {
-	margin-top: 40px;
-	.or {
-		padding: 45px 0 30px 0;
-		font-family: $altfont;
-		@include font-size(20);
-		font-weight: bold;
-		line-height: 30px;
-		text-align: center;
-		@include single-text-shadow(1px, 1px, 0px, false, #fff);
-		color: #a9a9a9;
-		background: image-url('or.png') no-repeat center 62px; 
-	}
-
 	.scroll {
-		padding: 0 0 105px 0;
+		padding: 0 0 120px 0;
 		@include font-size(30);
-        font-family: $altfont;
         text-align: center;
-        @include single-text-shadow(1px, 1px, 0px, false, #fff);
-        color: $baseheadingfontcolorhighlight;
+        color: $alttextcolor;
         background: image-url('scroll.png') no-repeat bottom center;
 	}
 }
 
 /* ABOUT =================================================== */
 
-#about {
+.about {
 	@extend .page;
 	top: 1200px;
     left: 540px;
@@ -106,7 +85,6 @@
 }
 
 .about-content {
-	clear: both;
 	width: 960px;
 	height: 330px;
 	padding-top: 440px;
@@ -123,40 +101,18 @@
 	}
 }
 
-.blurb {
-	h1 {
-		margin-bottom: 30px;
-		// font-family: $altfont;
-		@include font-size(50);
-		line-height: 30px;
-
-		span {
-			color: $baseheadingfontcolorhighlight;
-		}
-	}
-
-	p {
-		font-family: $altfont;
-		@include font-size(18);
-		line-height: 30px;
-	}
-}
-
 .myskills {
 	h1 {
-		margin-bottom: 30px;
 		text-align: right;
-		@include font-size(50);
-		line-height: 30px;
 	}
 
 	ul {
 		padding: 0px 10px 0px 0px;
 		margin: 10px;
-		color: $baseheadingfontcolorhighlight;
+		color: $alttextcolor;
 
 		li {
-			font-family: $altfont;
+			// font-family: $altfont;
 			text-align: right;
 			@include font-size(18);
 			line-height: 30px;
@@ -169,78 +125,9 @@
 	}
 }
 
-.skills {
-	overflow: hidden;
-	height: 175px;
-	padding: 30px 0;
-	margin-top: 40px;
-	border: 2px dashed #c7c7c7;
-    @include single-box-shadow(rgba(0, 0, 0, 0.04), 0, 0, 50px, false, true);
-
-	.skill {
-		position: relative;
-		float: right;
-		width: 27%;
-		height: 175px;
-		padding: 0px 20px;
-    	list-style: none;
-    	border-right: 2px dashed #c7c7c7;
-
-    	.skill_wrap {
-    		position: absolute;
-    		top: 0px;
-    		@include single-transition(top, 0.2s);
-
-            &:hover {
-            	top: -140px;
-
-            	h2 {
-            		margin-bottom: 5px;
-            	}
-
-            	img {
-            		margin-bottom: 20px;
-            	}
-            }
-    	}
-
-    	img {
-    		display: block;
-    		margin: 0 auto;
-    		@include single-transition(margin-bottom, 0.2s);
-    	}
-
-    	h2 {
-    		height: 50px;
-    		margin: 15px 0 30px 0;
-    		text-align: center;
-    		font-family: $altfont;
-    		@include font-size(22);
-    		color: $baseheadingfontcolorhighlight;
-    		@include single-transition(margin-bottom, 0.2s);
-    	}
-
-    	p {
-    		width: 180px;
-    		margin: 0px;
-    		@include font-size(12);
-    		font-family: $altfont;
-    		text-align: center;
-    	}
-	}
-
-	.pm {
-		border: 0px;
-
-		h2 {
-			margin-right: 20px;
-		}
-	}
-}
-
 /* PORT =================================================== */
 
-#portfolio {
+.portfolio {
 	@extend .page;
 	top: 630px;
 	left: 2110px;
@@ -253,15 +140,6 @@
     margin: 0 auto;
     font-size: 0;
     text-align: center;
-
-    .compiling {
-    	position: absolute;
-		top: 0px;
-		left: 538px;
-		width: 434px;
-		height: 400px;
-		background: image-url('sign.png') no-repeat 0 0;
-    }
 
     .port-items {
     	position: absolute;
@@ -278,7 +156,6 @@
 			width:160px;
 			height: 160px;
 			margin: 0 35px 35px 0;
-			// background: #6f6f6f;
 		}
 
 		.port-item {
@@ -286,7 +163,6 @@
 			cursor: pointer;
 			width: 100%;
 			height: 100%;
-			// border: 4px solid #6f6f6f;
 			margin: 6px 0px 0px 6px;
 			@include single-box-shadow(rgba(50, 50, 50, 0.75), 0px, 0px, 20px);
 			background-repeat: no-repeat;
@@ -297,8 +173,7 @@
 			}
 
 			&:active {
-				// margin: 0px;
-				border: 4px solid $baseheadingfontcolorhighlight;
+				border: 4px solid $alttextcolor;
 				background-position: -4px -4px;
 				-webkit-box-sizing: border-box;
 				-moz-box-sizing: border-box;
@@ -338,13 +213,12 @@
 
 /* PORT-ITEM ================================================= */
 
-#tablet {
+.tablet {
 	@extend .page;
 	top: 2130px;
 	left: 1895px;
 	width: 1865px;
 	height: 1024px;
-	// background: image-url('tablet.png') no-repeat 0 0;
 }
 
 .tablet-content {
@@ -357,11 +231,10 @@
 .tablet-bg {
 	position: absolute;
 	top: -10px;
-	pointer-events:none;
+	pointer-events: none;
 	width: 1865px;
 	height: 1024px;
 	background: image-url('tablet.png') no-repeat 0 0;
-	// z-index: 100;
 }
 
 .tab-content-wrap {
@@ -370,7 +243,6 @@
 	height:650px;
 	overflow: hidden;
 	margin: 150px 0px 0px 510px;
-	// z-index: -10;
 }
 
 .tab-controls {
@@ -381,43 +253,8 @@
 
 
 	.tab-back {
-		position: relative;
 		float: left;
-		padding: 10px 15px 10px 5px;
 		margin-left: 25px;
-		background: $lightergrey;
-
-		.back-arrow {
-			position: absolute;
-			top: 0px;
-			left: -43px;
-			width: 0px;
-			height: 0px;
-			border-color: transparent transparent $lightergrey transparent;
-			border-width: 22px;
-			border-style: solid;
-			@include rotate(270deg);
-		}
-
-		&:hover {
-			text-decoration: none;
-			color: $white;
-			background: $baseheadingfontcolorhighlight;
-
-			.back-arrow {
-				border-color: transparent transparent $baseheadingfontcolorhighlight transparent;
-			}
-		}
-
-		&:active {
-			text-decoration: none;
-			color: $white;
-			background: darken($baseheadingfontcolorhighlight, 10);
-
-			.back-arrow {
-				border-color: transparent transparent darken($baseheadingfontcolorhighlight, 10) transparent;
-			}
-		}
 	}
 
 	.tab-prev-next {
@@ -427,89 +264,12 @@
 		li {
 			display: inline-block;
 		}
-
-		.tab-prev {
-			position: relative;
-			padding: 10px 15px 10px 5px;
-			background: $lightergrey;
-
-			.back-arrow {
-				position: absolute;
-				top: 0px;
-				left: -43px;
-				width: 0px;
-				height: 0px;
-				border-color: transparent transparent $lightergrey transparent;
-				border-width: 22px;
-				border-style: solid;
-				@include rotate(270deg);
-			}
-
-			&:hover {
-				text-decoration: none;
-				color: $white;
-				background: $baseheadingfontcolorhighlight;
-
-				.back-arrow {
-					border-color: transparent transparent $baseheadingfontcolorhighlight transparent;
-				}
-			}
-
-			&:active {
-				text-decoration: none;
-				color: $white;
-				background: darken($baseheadingfontcolorhighlight, 10);
-
-				.back-arrow {
-					border-color: transparent transparent darken($baseheadingfontcolorhighlight, 10) transparent;
-				}
-			}
-		}
-
-		.tab-next {
-			position: relative;
-			padding: 10px 5px 10px 15px;
-			background: $lightergrey;
-
-			.for-arrow {
-				position: absolute;
-				top: 0px;
-				right: -43px;
-				width: 0px;
-				height: 0px;
-				border-color: transparent transparent $lightergrey transparent;
-				border-width: 22px;
-				border-style: solid;
-				@include rotate(90deg);
-			}
-
-			&:hover {
-				text-decoration: none;
-				color: $white;
-				background: $baseheadingfontcolorhighlight;
-
-				.for-arrow {
-					border-color: transparent transparent $baseheadingfontcolorhighlight transparent;
-				}
-			}
-
-			&:active {
-				text-decoration: none;
-				color: $white;
-				background: darken($baseheadingfontcolorhighlight, 10);
-
-				.for-arrow {
-					border-color: transparent transparent darken($baseheadingfontcolorhighlight, 10) transparent;
-				}
-			}
-		}
 	}
 
 	a {
 		cursor: pointer;
-		font-family: $altfont;
    		@include font-size(20);
-   		color: darken($baseheadingfontcolorhighlight, 10);
+   		color: darken($alttextcolor, 10);
 	}
 }
 
@@ -525,7 +285,7 @@
 
 	.tab-item {
 		float: left;
-		width: 755px;
+		width: 760px;
 		height: 500px;
 		padding: 10px 50px 50px 50px;
 	}
@@ -535,19 +295,24 @@
 
 	h1 {
 		margin-bottom: 10px;
-		font-family: $altfont;
 		@include font-size(40);
 	}
 
 	.tab-right {
 		float: right;
-		width: 377px;
-		margin: 0px 0px 10px 10px;
+		// width: 377px;
+		// margin: 0px 0px 10px 10px;
 	}
 }
 
+.tab-right {
+	text-align: center;
+}
+
 .tab-image {
-	margin: 10px 0px 35px 10px;
+	height: 412px;
+	padding: 0px;
+	margin: 10px 0px 25px 20px;
 	border: 1px solid $grey;
 
 	.tab-browser {
@@ -557,6 +322,7 @@
 		border-bottom: 1px solid $grey;
 
 		li {
+			float: left;
 			display: inline-block;
 			width: 8px;
 			height: 8px;
@@ -564,8 +330,8 @@
 		}
 
 		.tab-browser-btn {
-			margin-top: 13px;
-			background-color: lighten($baseheadingfontcolorhighlight, 30);
+			margin: 13px 5px 0px 0px;
+			background-color: lighten($alttextcolor, 30);
 			@include border-radius(10px);
 		}
 
@@ -574,32 +340,22 @@
 			width: 70%;
 			padding: 7px;
 			margin: 5px;
-			background-color: lighten($baseheadingfontcolorhighlight, 30);
+			background-color: lighten($alttextcolor, 30);
 			@include border-radius(5px);
 		}
+	}
+
+	img {
+
+		width: 377px;
+		height: 377px;
 	} 
 }
 
-.tab-url {
-	width: 81px;
-	display: block;
-	padding: 7px 10px 8px 10px;
+.tab_url {	
 	margin: 10px auto;
-	@include font-size(18);
-	line-height: 34px;
 	text-transform: uppercase;
-	border: 1px dashed $lightgrey;
-	color: $darkgrey;
 	@include single-box-shadow(rgba(50, 50, 50, 0.1), 0px, 0px, 20px);
-
-	&:hover {
-		text-decoration: none;
-		background-color: lighten($lightgrey, 10);
-	}
-
-	&:active {
-		background-color: $lightgrey;
-	}
 }
 
 .tab-tags {
@@ -618,26 +374,17 @@
 	}
 }
 
-.tab-info {
 
-	p { 
-		margin-bottom: 10px;
-		font-family: $altfont;
-		line-height: 30px;
-		@include font-size(18);
-	}
-}
 
 /* CONTACT =================================================== */
 
-#contact {
+.contact {
 	@extend .page;
 	top: 1300px;
     left: 3100px;
     width: 960px;
     height: 800px;
     padding-top: 150px;
-    font-family: $altfont;
     text-align: center;
     color: $white;
     background: image-url('postbox.png') no-repeat right 0;
@@ -647,48 +394,19 @@
 	width: 570px;
 	height: 430px;
 	padding: 40px;
-	background-color: lighten($lightgrey, 0);
+	background-color: lighten($grey, 20);
 	border: 2px dashed $grey;
 
 	h1 {
+		color: $white;
 		margin-bottom: 20px;
 		@include font-size(50);
 		line-height: 50px;
-
-		span {
-			color: $baseheadingfontcolorhighlight;
-		}
-	}
-
-	.break {
-		display: block;
-		width: 400px;
-		height: 1px;
-		margin: 0 auto;
-		margin-bottom: 30px;
-		border-color: $white transparent $white transparent;
-		border-width: 1px;
-		border-style: solid;
-		@include opacity(0.4);
 	}
 
 	.cv {
-		display: block;
-		width: 120px;
-		margin: 30px auto;
-		padding: 10px 15px;
-		border: 1px dashed $lightgrey;
+		margin: 0px auto 30px auto;
 		text-transform: uppercase;
-		color: $baseheadingfontcolorhighlight;
-		background-color: $lightergrey;
-		cursor: pointer;
-		@include single-transition(background-color, 0.1s, ease-in-out, 0);
-
-		&:hover {
-			text-decoration: none;
-			color: $white;
-			background-color: $baseheadingfontcolorhighlight;
-		}
 	}
 
 	.contact_links {
@@ -701,8 +419,7 @@
 			@include font-size(18);
 			line-height: 20px;
 			cursor: pointer;
-			color: darken($baseheadingfontcolorhighlight, 10);
-			@include single-transition(color, 0.2s, ease-in-out, 0);
+			color: darken($alttextcolor, 10);
 
 			&:hover{ 
 				text-decoration: none;
@@ -722,9 +439,8 @@
 		margin-bottom: 30px;
 
 		a {
-			text-transform: uppercase;
 			cursor: pointer;
-			color: darken($baseheadingfontcolorhighlight, 10);
+			color: darken($alttextcolor, 10);
 			@include single-transition(color, 0.2s, ease-in-out, 0);
 
 			&:hover {
@@ -741,7 +457,7 @@
 
 		a {
 			cursor: pointer;
-			color: darken($baseheadingfontcolorhighlight, 10);
+			color: darken($alttextcolor, 10);
 			@include single-transition(color, 0.2s, ease-in-out, 0);
 
 			&:hover {
@@ -754,6 +470,5 @@
 	.copyright {
 		@include font-size(14);
 		line-height: 20px;	
-	}
-		
+	}		
 }
