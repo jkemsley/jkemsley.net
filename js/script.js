@@ -5,10 +5,9 @@ function init() {
 	var path = $.fn.scrollPath("getPath");
 
 		path.moveTo(400, 620, { name: "home"})
-		.arc(800, 1200, 400, 1 * Math.PI, 0.5 * Math.PI, true)
-		.lineTo(1320, 1600, { name: "about"})
-		.lineTo(1750, 1600)
-		.arc(1900, 1300, 300, Math.PI/2, 0, true)
+		.arc(800, 1300, 400, 1 * Math.PI, 0.5 * Math.PI, true)
+		.lineTo(1320, 1700, { name: "about"})
+		.arc(1900, 1400, 300, Math.PI/2, 0, true)
 		.arc(2600, 1300, 400, 1 * Math.PI, 1.5 * Math.PI, false)
 		.lineTo(2860, 900, { name: "portfolio"})
 		.arc(3200, 1300, 400, 1.5 * Math.PI, 0 * Math.PI, false)

@@ -9,6 +9,7 @@
   margin-bottom: 0;
   @include font-size(18);
   font-family: $altfont;
+  text-transform: uppercase;
   line-height: 34px;
   color: $buttoncolor;
   text-align: center;
