@@ -81,7 +81,7 @@ body {
   display: table-cell;
   overflow: hidden;
   border: 15px solid gainsboro;
-  background: #fefefe url('../img/bg-light.png?1360706080');
+  background: #fefefe url('../img/bg-light.png?1364829980');
   z-index: -100;
 }
 
@@ -142,7 +142,7 @@ nav {
 .nav-wrap .home-nav .site-logo a {
   padding: 18px 25px 40px 25px;
   border-bottom: 4px solid #7b5154;
-  background: #a47578 url('../img/logo.png?1363082943') no-repeat center center;
+  background: #a47578 url('../img/logo.png?1364829980') no-repeat center center;
 }
 /* line 108, ../scss/_site.scss */
 .nav-wrap .home-nav .site-logo a:hover {
@@ -157,7 +157,7 @@ nav {
   padding: 18px 0 18px 45px;
   margin: 0px;
   text-align: right;
-  background: url('../img/swirl.png?1363003629') no-repeat left 25px;
+  background: url('../img/swirl.png?1364829980') no-repeat left 25px;
 }
 /* line 125, ../scss/_site.scss */
 .nav-wrap .nav li {
@@ -193,7 +193,7 @@ nav {
   left: -80px;
   width: 712px;
   height: 622px;
-  background: url('../img/line1.png?1363677194') no-repeat;
+  background: url('../img/line1.png?1364829980') no-repeat;
 }
 
 /* line 161, ../scss/_site.scss */
@@ -203,7 +203,7 @@ nav {
   left: 1977px;
   width: 288px;
   height: 599px;
-  background: url('../img/line2.png?1363730086') no-repeat;
+  background: url('../img/line2.png?1364829980') no-repeat;
 }
 
 /* line 170, ../scss/_site.scss */
@@ -213,7 +213,7 @@ nav {
   left: 3422px;
   width: 532px;
   height: 424px;
-  background: url('../img/line3.png?1363731105') no-repeat;
+  background: url('../img/line3.png?1364829980') no-repeat;
 }
 
 /* line 179, ../scss/_site.scss */
@@ -223,7 +223,7 @@ nav {
   left: 2640px;
   width: 529px;
   height: 1123px;
-  background: url('../img/line4.png?1363807653') no-repeat;
+  background: url('../img/line4.png?1364829980') no-repeat;
 }
 
 /* line 188, ../scss/_site.scss */
@@ -333,13 +333,13 @@ a:hover, a:active {
   *display: inline;
   /* IE7 inline-block hack */
   *zoom: 1;
-  padding: 5px 10px 10px 10px;
+  padding: 14px 15px 10px 15px;
   margin-bottom: 0;
   font-size: 18px;
   font-size: 1.8rem;
   font-family: "Josefin Sans", Arial, sans-serif;
   text-transform: uppercase;
-  line-height: 34px;
+  line-height: 15px;
   color: #a47578;
   text-align: center;
   vertical-align: middle;
@@ -460,7 +460,7 @@ a:hover, a:active {
   left: -563px;
   width: 1500px;
   height: 987px;
-  background: url('../img/port.png?1361117514') no-repeat 0 0;
+  background: url('../img/port.png?1364829980') no-repeat 0 0;
 }
 
 /* line 12, ../scss/_page.scss */
@@ -473,7 +473,7 @@ a:hover, a:active {
 /* line 18, ../scss/_page.scss */
 .home-header {
   text-align: right;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 /* line 22, ../scss/_page.scss */
 .home-header h1 {
@@ -491,32 +491,41 @@ a:hover, a:active {
 .home-header .tag {
   display: block;
   height: 130px;
-  padding: 10px 0px 0 0;
+  padding: 20px 0px 0 0;
   font-size: 72px;
   font-size: 7.2rem;
   font-weight: 300;
   font-family: "Josefin Sans", Arial, sans-serif;
   text-align: right;
-  line-height: 53px;
   border-top: 1px solid #c1c1c1;
 }
-/* line 44, ../scss/_page.scss */
+/* line 43, ../scss/_page.scss */
 .home-header .tag .amp {
+  display: block;
   float: right;
-  padding: 25px 0px 0px 10px;
+  width: 110px;
+  padding: 22px 0px 0px 10px;
   font-family: "Libre Baskerville", serif;
+  text-align: center;
   font-size: 120px;
   font-size: 12rem;
   line-height: 100px;
   color: #a47578;
 }
-/* line 53, ../scss/_page.scss */
-.home-header .tag span {
+/* line 55, ../scss/_page.scss */
+.home-header .tag .des {
+  display: block;
+  line-height: 80px;
+}
+/* line 60, ../scss/_page.scss */
+.home-header .tag .dev {
   padding: 0px 1px 0px 35px;
-  background: url('../img/d.png?1360515333') no-repeat 0px 52px;
+  margin-top: -40px;
+  line-height: 20px;
+  background: url('../img/d.png?1364829980') no-repeat 0px 13px;
 }
 
-/* line 60, ../scss/_page.scss */
+/* line 69, ../scss/_page.scss */
 .teaser {
   margin-bottom: 30px;
   font-size: 20px;
@@ -525,71 +534,71 @@ a:hover, a:active {
   line-height: 40px;
 }
 
-/* line 67, ../scss/_page.scss */
+/* line 76, ../scss/_page.scss */
 .hm_cv {
   margin: 0px auto 40px auto;
 }
 
-/* line 72, ../scss/_page.scss */
+/* line 81, ../scss/_page.scss */
 .home-footer .scroll {
   padding: 0 0 120px 0;
   font-size: 30px;
   font-size: 3rem;
   text-align: center;
   color: #a47578;
-  background: url('../img/scroll.png?1358190226') no-repeat bottom center;
+  background: url('../img/scroll.png?1364829980') no-repeat bottom center;
 }
 
 /* ABOUT =================================================== */
-/* line 83, ../scss/_page.scss */
+/* line 92, ../scss/_page.scss */
 .about {
   top: 1200px;
   left: 540px;
   width: 1598px;
   height: 800px;
-  background: url('../img/about.png?1358190226') no-repeat 0 0;
+  background: url('../img/about.png?1364829980') no-repeat 0 0;
 }
 
-/* line 92, ../scss/_page.scss */
+/* line 101, ../scss/_page.scss */
 .about-content {
   width: 980px;
   height: 330px;
   padding-top: 430px;
   margin: 0 auto;
 }
-/* line 98, ../scss/_page.scss */
+/* line 107, ../scss/_page.scss */
 .about-content .blurb {
   float: left;
   width: 60%;
 }
-/* line 102, ../scss/_page.scss */
+/* line 111, ../scss/_page.scss */
 .about-content .blurb h1 {
   color: #a47578;
 }
-/* line 106, ../scss/_page.scss */
+/* line 115, ../scss/_page.scss */
 .about-content .blurb p {
   line-height: 35px;
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 112, ../scss/_page.scss */
+/* line 121, ../scss/_page.scss */
 .about-content .myskills {
   float: right;
   width: 35%;
 }
 
-/* line 119, ../scss/_page.scss */
+/* line 128, ../scss/_page.scss */
 .myskills h1 {
   text-align: right;
   color: #a47578;
 }
-/* line 124, ../scss/_page.scss */
+/* line 133, ../scss/_page.scss */
 .myskills ul {
   padding: 0px 10px 0px 0px;
   margin: 10px;
   color: #a47578;
 }
-/* line 129, ../scss/_page.scss */
+/* line 138, ../scss/_page.scss */
 .myskills ul li {
   margin-bottom: 10px;
   text-align: right;
@@ -598,13 +607,13 @@ a:hover, a:active {
   line-height: 30px;
   list-style: square;
 }
-/* line 137, ../scss/_page.scss */
+/* line 146, ../scss/_page.scss */
 .myskills ul li span {
   color: #404040;
 }
 
 /* PORT =================================================== */
-/* line 146, ../scss/_page.scss */
+/* line 155, ../scss/_page.scss */
 .portfolio {
   top: 630px;
   left: 2110px;
@@ -612,14 +621,14 @@ a:hover, a:active {
   height: 800px;
 }
 
-/* line 154, ../scss/_page.scss */
+/* line 163, ../scss/_page.scss */
 .portfolio-content {
   position: relative;
   margin: 0 auto;
   font-size: 0;
   text-align: center;
 }
-/* line 160, ../scss/_page.scss */
+/* line 169, ../scss/_page.scss */
 .portfolio-content .port-items {
   position: absolute;
   top: 93px;
@@ -629,7 +638,7 @@ a:hover, a:active {
   padding-left: 0px;
   list-style: none;
 }
-/* line 169, ../scss/_page.scss */
+/* line 178, ../scss/_page.scss */
 .portfolio-content .port-items li {
   position: relative;
   float: left;
@@ -637,7 +646,7 @@ a:hover, a:active {
   height: 160px;
   margin: 0 35px 35px 0;
 }
-/* line 177, ../scss/_page.scss */
+/* line 186, ../scss/_page.scss */
 .portfolio-content .port-items .port-item {
   display: block;
   cursor: pointer;
@@ -650,11 +659,11 @@ a:hover, a:active {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-/* line 187, ../scss/_page.scss */
+/* line 196, ../scss/_page.scss */
 .portfolio-content .port-items .port-item:hover {
   outline: 4px solid #404040;
 }
-/* line 191, ../scss/_page.scss */
+/* line 200, ../scss/_page.scss */
 .portfolio-content .port-items .port-item:active {
   border: 4px solid #a47578;
   background-position: -4px -4px;
@@ -662,37 +671,37 @@ a:hover, a:active {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 200, ../scss/_page.scss */
+/* line 209, ../scss/_page.scss */
 .portfolio-content .port-items #radical {
-  background-image: url('../img/radical_thumb.jpg?1363257182');
+  background-image: url('../img/radical_thumb.jpg?1364829980');
 }
-/* line 205, ../scss/_page.scss */
+/* line 214, ../scss/_page.scss */
 .portfolio-content .shelf-left {
   display: inline-block;
   width: 432px;
   height: 499px;
   z-index: -2;
-  background: url('../img/shelf-left.png?1358190226') no-repeat 0 0;
+  background: url('../img/shelf-left.png?1364829980') no-repeat 0 0;
 }
-/* line 213, ../scss/_page.scss */
+/* line 222, ../scss/_page.scss */
 .portfolio-content .shelf-middle {
   display: inline-block;
   width: 398px;
   height: 499px;
   z-index: -2;
-  background: url('../img/shelf-middle.png?1358190226') repeat-x 0 -10px;
+  background: url('../img/shelf-middle.png?1364829980') repeat-x 0 -10px;
 }
-/* line 221, ../scss/_page.scss */
+/* line 230, ../scss/_page.scss */
 .portfolio-content .shelf-right {
   display: inline-block;
   width: 395px;
   height: 499px;
   z-index: -2;
-  background: url('../img/shelf-right.png?1358190226') no-repeat 0 0;
+  background: url('../img/shelf-right.png?1364829980') no-repeat 0 0;
 }
 
 /* PORT-ITEM ================================================= */
-/* line 232, ../scss/_page.scss */
+/* line 241, ../scss/_page.scss */
 .tablet {
   top: 2130px;
   left: 1895px;
@@ -700,7 +709,7 @@ a:hover, a:active {
   height: 1024px;
 }
 
-/* line 240, ../scss/_page.scss */
+/* line 249, ../scss/_page.scss */
 .tablet-content {
   position: relative;
   overflow: auto;
@@ -708,17 +717,17 @@ a:hover, a:active {
   height: 1024px;
 }
 
-/* line 247, ../scss/_page.scss */
+/* line 256, ../scss/_page.scss */
 .tablet-bg {
   position: absolute;
   top: -10px;
   pointer-events: none;
   width: 1865px;
   height: 1024px;
-  background: url('../img/tablet.png?1363263363') no-repeat 0 0;
+  background: url('../img/tablet.png?1364829980') no-repeat 0 0;
 }
 
-/* line 256, ../scss/_page.scss */
+/* line 265, ../scss/_page.scss */
 .tab-content-wrap {
   position: relative;
   width: 860px;
@@ -727,28 +736,28 @@ a:hover, a:active {
   margin: 150px 0px 0px 510px;
 }
 
-/* line 264, ../scss/_page.scss */
+/* line 273, ../scss/_page.scss */
 .tab-controls {
   height: 50px;
   padding-bottom: 5px;
   margin: 25px 50px 10px 50px;
   border-bottom: 1px solid #c1c1c1;
 }
-/* line 271, ../scss/_page.scss */
+/* line 280, ../scss/_page.scss */
 .tab-controls .tab-back {
   float: left;
   margin-left: 25px;
 }
-/* line 276, ../scss/_page.scss */
+/* line 285, ../scss/_page.scss */
 .tab-controls .tab-prev-next {
   float: right;
   margin: 12px 25px 12px 0px;
 }
-/* line 280, ../scss/_page.scss */
+/* line 289, ../scss/_page.scss */
 .tab-controls .tab-prev-next li {
   display: inline-block;
 }
-/* line 285, ../scss/_page.scss */
+/* line 294, ../scss/_page.scss */
 .tab-controls a {
   cursor: pointer;
   font-size: 20px;
@@ -756,7 +765,7 @@ a:hover, a:active {
   color: #8b5b5e;
 }
 
-/* line 292, ../scss/_page.scss */
+/* line 301, ../scss/_page.scss */
 .tab-items {
   position: absolute;
   top: 90px;
@@ -767,7 +776,7 @@ a:hover, a:active {
   margin-right: 200px;
   list-style: none;
 }
-/* line 302, ../scss/_page.scss */
+/* line 311, ../scss/_page.scss */
 .tab-items .tab-item {
   float: left;
   width: 760px;
@@ -775,37 +784,37 @@ a:hover, a:active {
   padding: 10px 50px 50px 50px;
 }
 
-/* line 312, ../scss/_page.scss */
+/* line 321, ../scss/_page.scss */
 .tab-item h1 {
   margin-bottom: 10px;
   font-size: 40px;
   font-size: 4rem;
 }
-/* line 317, ../scss/_page.scss */
+/* line 326, ../scss/_page.scss */
 .tab-item .tab-right {
   float: right;
 }
 
-/* line 324, ../scss/_page.scss */
+/* line 333, ../scss/_page.scss */
 .tab-right {
   text-align: center;
 }
 
-/* line 328, ../scss/_page.scss */
+/* line 337, ../scss/_page.scss */
 .tab-image {
   height: 412px;
   padding: 0px;
   margin: 10px 0px 25px 20px;
   border: 1px solid gray;
 }
-/* line 334, ../scss/_page.scss */
+/* line 343, ../scss/_page.scss */
 .tab-image .tab-browser {
   overflow: auto;
   padding: 0px 0px 0px 7px;
   list-style: none;
   border-bottom: 1px solid gray;
 }
-/* line 340, ../scss/_page.scss */
+/* line 349, ../scss/_page.scss */
 .tab-image .tab-browser li {
   float: left;
   display: inline-block;
@@ -813,7 +822,7 @@ a:hover, a:active {
   height: 8px;
   border: 1px solid gray;
 }
-/* line 348, ../scss/_page.scss */
+/* line 357, ../scss/_page.scss */
 .tab-image .tab-browser .tab-browser-btn {
   margin: 13px 5px 0px 0px;
   background-color: #e1d1d2;
@@ -823,7 +832,7 @@ a:hover, a:active {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 354, ../scss/_page.scss */
+/* line 363, ../scss/_page.scss */
 .tab-image .tab-browser .tab-browser-adrs {
   float: right;
   width: 70%;
@@ -836,13 +845,13 @@ a:hover, a:active {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 364, ../scss/_page.scss */
+/* line 373, ../scss/_page.scss */
 .tab-image img {
   width: 377px;
   height: 377px;
 }
 
-/* line 371, ../scss/_page.scss */
+/* line 380, ../scss/_page.scss */
 .tab_url {
   margin: 10px auto;
   text-transform: uppercase;
@@ -851,13 +860,13 @@ a:hover, a:active {
   box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.1);
 }
 
-/* line 377, ../scss/_page.scss */
+/* line 386, ../scss/_page.scss */
 .tab-tags {
   list-style: none;
   padding: 0px 10px 0 0;
   margin-bottom: 10px;
 }
-/* line 382, ../scss/_page.scss */
+/* line 391, ../scss/_page.scss */
 .tab-tags li {
   display: inline-block;
   padding: 5px 5px 10px 5px;
@@ -870,7 +879,7 @@ a:hover, a:active {
 }
 
 /* CONTACT =================================================== */
-/* line 397, ../scss/_page.scss */
+/* line 406, ../scss/_page.scss */
 .contact {
   top: 1300px;
   left: 3100px;
@@ -879,10 +888,10 @@ a:hover, a:active {
   padding-top: 150px;
   text-align: center;
   color: white;
-  background: url('../img/postbox.png?1358190226') no-repeat right 0;
+  background: url('../img/postbox.png?1364829980') no-repeat right 0;
 }
 
-/* line 409, ../scss/_page.scss */
+/* line 418, ../scss/_page.scss */
 .contact-content {
   width: 570px;
   height: 430px;
@@ -890,7 +899,7 @@ a:hover, a:active {
   background-color: #b3b3b3;
   border: 2px dashed gray;
 }
-/* line 416, ../scss/_page.scss */
+/* line 425, ../scss/_page.scss */
 .contact-content h1 {
   color: white;
   margin-bottom: 20px;
@@ -898,18 +907,18 @@ a:hover, a:active {
   font-size: 5rem;
   line-height: 50px;
 }
-/* line 423, ../scss/_page.scss */
+/* line 432, ../scss/_page.scss */
 .contact-content .cv {
   margin: 0px auto 30px auto;
 }
-/* line 427, ../scss/_page.scss */
+/* line 436, ../scss/_page.scss */
 .contact-content .contact_links {
   margin-bottom: 30px;
   font-size: 30px;
   font-size: 3rem;
   line-height: 30px;
 }
-/* line 432, ../scss/_page.scss */
+/* line 441, ../scss/_page.scss */
 .contact-content .contact_links a {
   vertical-align: middle;
   font-size: 18px;
@@ -918,25 +927,25 @@ a:hover, a:active {
   cursor: pointer;
   color: #8b5b5e;
 }
-/* line 439, ../scss/_page.scss */
+/* line 448, ../scss/_page.scss */
 .contact-content .contact_links a:hover {
   text-decoration: none;
   color: white;
 }
-/* line 445, ../scss/_page.scss */
+/* line 454, ../scss/_page.scss */
 .contact-content .contact_links span {
   vertical-align: middle;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
-/* line 451, ../scss/_page.scss */
+/* line 460, ../scss/_page.scss */
 .contact-content .contact_email {
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 20px;
   margin-bottom: 30px;
 }
-/* line 456, ../scss/_page.scss */
+/* line 465, ../scss/_page.scss */
 .contact-content .contact_email a {
   cursor: pointer;
   color: #8b5b5e;
@@ -946,19 +955,19 @@ a:hover, a:active {
   -o-transition: color 0.2s ease-in-out 0;
   transition: color 0.2s ease-in-out 0;
 }
-/* line 461, ../scss/_page.scss */
+/* line 470, ../scss/_page.scss */
 .contact-content .contact_email a:hover {
   text-decoration: none;
   color: white;
 }
-/* line 468, ../scss/_page.scss */
+/* line 477, ../scss/_page.scss */
 .contact-content .credits {
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 25px;
   margin-bottom: 15px;
 }
-/* line 473, ../scss/_page.scss */
+/* line 482, ../scss/_page.scss */
 .contact-content .credits a {
   cursor: pointer;
   color: #8b5b5e;
@@ -968,12 +977,12 @@ a:hover, a:active {
   -o-transition: color 0.2s ease-in-out 0;
   transition: color 0.2s ease-in-out 0;
 }
-/* line 478, ../scss/_page.scss */
+/* line 487, ../scss/_page.scss */
 .contact-content .credits a:hover {
   text-decoration: none;
   color: white;
 }
-/* line 485, ../scss/_page.scss */
+/* line 494, ../scss/_page.scss */
 .contact-content .copyright {
   font-size: 14px;
   font-size: 1.4rem;
