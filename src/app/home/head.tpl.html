@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="navbar-header">
+        <div class="navbar-brand">
+            <div class="j">J</div>
+            <div class="k">K</div>
+        </div>
+    </div>
+    <nav>
+        <ul class="nav navbar-nav navbar-right">
+            <li ng-class="{active: $state.is('home')}"><a ui-sref="home" href="#home" du-scrollspy>Home</a></li>
+            <li ng-class="{active: $state.is('home.about')}"><a ui-sref="home.about" href="#about" du-scrollspy>About</a></li>
+            <li ng-class="{active: $state.is('home.dev')}"><a ui-sref="home.dev" href="#dev" du-scrollspy>Dev</a></li>
+            <li ng-class="{active: $state.is('home.des')}"><a ui-sref="home.des" href="#des" du-scrollspy>Des</a></li>
+        </ul>
+    </nav>
+</div>

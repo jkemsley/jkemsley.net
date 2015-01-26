@@ -38,6 +38,9 @@ intermediate
 publish
 .idea
 .vagrant
+node_modules
+build
+vendor
 
 # build script local files
 build/buildinfo.properties
